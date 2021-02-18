@@ -1,0 +1,84 @@
+body, html {
+    min-width: fit-content;
+}
+
+.ourrow {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.button {
+   color: black;
+   font-size: 160%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container1 {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.cuisine {
+    height: 150px;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    color: #000000;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: grey;
+  }
+
+.footDiv {
+    justify-content: space-between;
+    display: flex;
+}
+
+.lastRow {
+    margin-bottom: 50px !important;
+}
+
+.right {
+    float: right;
+    margin-right: 10px;
+}
+
+.left {
+    float: left;
+    margin-left: 10px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 50%;
+}
+
+.search {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90% !important;
+}
+
+.title {
+    text-align: center;
+}
+
+/*    margin-right: 80px;
+    margin-left: 40px;*/
