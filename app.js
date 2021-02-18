@@ -9,10 +9,11 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var foodPage = require('./routes/foodPage');
+var list = require('./routes/list');
 var library = require('./routes/library');
 var search = require('./routes/search');
 var preferences = require('./routes/preferences');
+var recipe = require('./routes/recipe');
 
 // Example route
 // var user = require('./routes/user');
@@ -40,10 +41,11 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-app.get('/cuisine/:id', foodPage.view);
+app.get('/cuisine/:id', list.view);
 app.get('/library', library.view);
 app.get('/search', search.view);
 app.get('/preferences', preferences.view);
+app.get('/recipe/:id', recipe.view);
 
 // Example route
 // app.get('/users', user.list);

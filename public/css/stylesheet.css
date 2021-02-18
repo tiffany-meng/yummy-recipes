@@ -71,14 +71,39 @@ footer {
 }
 
 .search {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     width: 90% !important;
+
 }
 
 .title {
     text-align: center;
 }
 
-/*    margin-right: 80px;
-    margin-left: 40px;*/
+.recipe {
+    height: 150px;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.recipe-center {
+    display: flex;
+    justify-content: center;
+}
+
+.small-image {
+    width: 30%;
+    height: 80%;
+    border-radius: 20px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
