@@ -6,17 +6,154 @@
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
+        <div class="backButton">
+            <button onclick="window.location.href='/'" type="button" class="btn btn-lg">
+                <span style="font-size: 30px;">
+                    <i class="fas fa-arrow-left"></i>
+                </span>
+            </button>
+        </div>
         <h1 class="title">Mexican</h1>
+        <div class="input-group rounded search">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
         <div class="recipe-center">
             <div class="recipe">
-                <a class="button" href="/recipe/1">
-                    <div class="row">
-                        <div class="col-6">
-                            <img class="small-image" src="/images/american.jpg" alt="">	
+                <a class="bigbutton" href="/recipe/1">
+                    <div class="row recipe-block">
+                        <div class="col-4 recipe-col">
+                            <img class="small-image" src="/images/hard_shell_taco.jpg" alt="">	
                         </div>
-                        <div class="col-6">
+                        <div class="col-7 info recipe-col">
+                            <h4>Hard Shell Tacos</h4>
+                            <p>20 mins 
+                                <span style="font-size: 8px;">
+                                    <i class="fas fa-circle"></i> 
+                                </span>
+                            450 cal</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="col-1 recipe-col"> 
+                            <i class="fas fa-chevron-right icon-col"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="recipe-center">
+            <div class="recipe">
+                <a class="bigbutton" href="/recipe/2">
+                    <div class="row recipe-block">
+                        <div class="col-4 recipe-col">
+                            <img class="small-image" src="/images/fajitas.jpeg" alt="">	
+                        </div>
+                        <div class="col-7 info recipe-col">
+                            <h4>Chicken Fajitas</h4>
+                            <p>40 mins 
+                                <span style="font-size: 8px;">
+                                    <i class="fas fa-circle"></i> 
+                                </span>
+                            350 cal</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="col-1 recipe-col"> 
+                            <i class="fas fa-chevron-right icon-col"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="recipe-center">
+            <div class="recipe">
+                <a class="bigbutton" href="/recipe/3">
+                    <div class="row recipe-block">
+                        <div class="col-4 recipe-col">
+                            <img class="small-image" src="/images/chile_verde.jpg" alt="">	
+                        </div>
+                        <div class="col-7 info recipe-col">
+                            <h4>Chile Verde Burrito</h4>
+                            <p>1 hour 
+                                <span style="font-size: 8px;">
+                                    <i class="fas fa-circle"></i> 
+                                </span>
+                            600 cal</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="col-1 recipe-col"> 
+                            <i class="fas fa-chevron-right icon-col"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="recipe-center">
+            <div class="recipe">
+                <a class="bigbutton" href="/recipe/4">
+                    <div class="row recipe-block">
+                        <div class="col-4 recipe-col">
+                            <img class="small-image" src="/images/carne_asada_quesadillas.jpg" alt="">	
+                        </div>
+                        <div class="col-7 info recipe-col">
+                            <h4>Carne Asada Quesadilla</h4>
+                            <p>10 mins 
+                                <span style="font-size: 8px;">
+                                    <i class="fas fa-circle"></i> 
+                                </span>
+                            200 cal</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="col-1 recipe-col"> 
+                            <i class="fas fa-chevron-right icon-col"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="recipe-center">
+            <div class="recipe">
+                <a class="bigbutton" href="/recipe/5">
+                    <div class="row recipe-block">
+                        <div class="col-4 recipe-col">
+                            <img class="small-image" src="/images/street_tacos.jpg" alt="">	
+                        </div>
+                        <div class="col-7 info recipe-col">
                             <h4>Street Tacos</h4>
-                            <p>20 mins</p>
+                            <p>30 mins 
+                                <span style="font-size: 8px;">
+                                    <i class="fas fa-circle"></i> 
+                                </span>
+                            400 cal</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="col-1 recipe-col"> 
+                            <i class="fas fa-chevron-right icon-col"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="recipe-center">
+            <div class="recipe lastRow">
+                <a class="bigbutton" href="/recipe/6">
+                    <div class="row recipe-block">
+                        <div class="col-4 recipe-col">
+                            <img class="small-image" src="/images/enchiladas.jpg" alt="">	
+                        </div>
+                        <div class="col-7 info recipe-col">
+                            <h4>Enchiladas</h4>
+                            <p>1 hr 30 mins 
+                                <span style="font-size: 8px;">
+                                    <i class="fas fa-circle"></i> 
+                                </span>
+                            550 cal</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <div class="col-1 recipe-col"> 
+                            <i class="fas fa-chevron-right icon-col"></i>
                         </div>
                     </div>
                 </a>
