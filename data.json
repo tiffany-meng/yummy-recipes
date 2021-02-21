@@ -1,0 +1,104 @@
+{
+    "categories" : [
+        {
+            "name" : "American",
+            "imagePath" : "/images/american.jpg",
+            "id" : 1
+        },
+        {
+            "name" : "Barbeque",
+            "imagePath" : "/images/barbeque.jpg",
+            "id" : 2
+        },
+        {
+            "name" : "Brazilian",
+            "imagePath" : "/images/brazilian.jpg",
+            "id" : 3
+        },
+        {
+            "name" : "Cajun",
+            "imagePath" : "/images/cajun.jpeg",
+            "id" : 4
+        },
+        {
+            "name" : "Chinese",
+            "imagePath" : "/images/chinese.png",
+            "id" : 5
+        },
+        {
+            "name" : "Cuban",
+            "imagePath" : "/images/cuban.jpg",
+            "id" : 6
+        },
+        {
+            "name" : "French",
+            "imagePath" : "/images/french.jpeg",
+            "id" : 7
+        },
+        {
+            "name" : "German",
+            "imagePath" : "/images/german.jpg",
+            "id" : 8
+        },
+        {
+            "name" : "Greek",
+            "imagePath" : "/images/greek.jpg",
+            "id" : 9
+        },
+        {
+            "name" : "Indian",
+            "imagePath" : "/images/indian.jpg",
+            "id" : 10
+        },
+        {
+            "name" : "Italian",
+            "imagePath" : "/images/italian.jpg",
+            "id" : 11
+        },
+        {
+            "name" : "Japanese",
+            "imagePath" : "/images/japanese.jpeg",
+            "id" : 12
+        },
+        {
+            "name" : "Korean",
+            "imagePath" : "/images/korean.jpeg",
+            "id" : 13
+        },
+        {
+            "name" : "Lebanese",
+            "imagePath" : "/images/lebanese.jpeg",
+            "id" : 14
+        },
+        {
+            "name" : "Mexican",
+            "imagePath" : "/images/mexican.jpg",
+            "id" : 15
+        },
+        {
+            "name" : "Peruvian",
+            "imagePath" : "/images/peruvian.jpg",
+            "id" : 16
+        },
+        {
+            "name" : "Soul Food",
+            "imagePath" : "/images/soulfood.jpg",
+            "id" : 17
+        },
+        {
+            "name" : "Spanish",
+            "imagePath" : "/images/spanish.jpg",
+            "id" : 18
+        },
+        {
+            "name" : "Thai",
+            "imagePath" : "/images/thai.jpg",
+            "id" : 19
+        },
+        {
+            "name" : "Vietnamese",
+            "imagePath" : "/images/vietnamese.png",
+            "id" : 20
+        }
+    ]
+}

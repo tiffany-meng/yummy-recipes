@@ -23,7 +23,41 @@ var app = express();
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars());
+
+var hbs = handlebars.create({
+  // Specify helpers which are only registered on this instance.
+  helpers: {
+    grouped_each: function(every, context, options) {
+      var out = "", subcontext = [], i;
+      if (context && context.length > 0) {
+          for (i = 0; i < context.length; i++) {
+              if (i > 0 && i % every === 0) {
+                  out += options.fn(subcontext);
+                  subcontext = [];
+              }
+              subcontext.push(context[i]);
+          }
+          out += options.fn(subcontext);
+      }
+      return out;
+    },
+    if_even: function(conditional, options) {
+      if((conditional % 2) == 0) {
+        return options.fn(this);
+      } else {
+        return options.inverse(this);
+      }
+    },
+    if_odd: function(conditional, options) {
+      if((conditional % 2) != 0) {
+        return options.fn(this);
+      } else {
+        return options.inverse(this);
+      }
+    }
+  }
+});
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));

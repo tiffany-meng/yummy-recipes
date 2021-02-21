@@ -1,3 +1,8 @@
+body {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300;
+}
+
 .ourrow {
     width: 100% !important;
     margin: 0 !important;
@@ -13,6 +18,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: 700;
 }
 
 .container1 {
@@ -29,19 +35,14 @@
     margin-bottom: 10px;
 }
 
-footer {
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 15px 0px;
-    background-color: #2F2F2F;
-  }
-
 .footDiv {
     justify-content: space-between;
     display: flex;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #212529;
 }
 
 .lastRow {
@@ -52,7 +53,6 @@ footer {
     float: right;
     margin-right: 7vw;
 }
-
 
 .left {
     float: left;
@@ -76,6 +76,7 @@ footer {
 .title {
     text-align: center;
     padding: 15px 40px;
+    font-weight: 700;
 }
 
 .recipe {
@@ -144,7 +145,19 @@ footer {
     padding: 0 !important;
 }
 
-.btn:focus {
-    outline: none;
-    box-shadow: none;
+.spacer {
+    height: 90px;
+}
+
+.active {
+    background-color: #6C757D;
+}
+
+.navicon {
+    font-size: 35px; 
+    color:white;
+}
+
+.iconwrapper {
+    padding: 25px;
 }

@@ -2,6 +2,7 @@
 <head>
 	<title>Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/stylesheet.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -14,95 +15,23 @@
 			<i class="fas fa-search"></i>
 		</span>
 	</div>
-	<div class="row ourrow">
-		<div class="col-6 ourcol">
-			<div class="cuisine left">
-				<a class="button" href="/cuisine/1">
-					<div class="container1">
-						<img class="image" src="/images/american.jpg" alt="">	
-						<div class="centered">American</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-6 ourcol">
-			<div class="cuisine right">
-				<a class="button" href="/cuisine/2">
-					<div class="container1">
-						<img class="image" src="/images/cajun.jpeg" alt="">	
-						<div class="centered">Cajun</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="row ourrow">
-		<div class="col-6 ourcol">
-			<div class="cuisine left">
-				<a class="button" href="/cuisine/3">
-					<div class="container1">
-						<img class="image" src="/images/chinese.png" alt="">
-						<div class="centered">Chinese</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-6 ourcol">
-			<div class="cuisine right">
-				<a class="button" href="/cuisine/4">
-					<div class="container1">
-						<img class="image" src="/images/indian.jpg" alt="">
-						<div class="centered">Indian</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="row ourrow">
-		<div class="col-6 ourcol">
-			<div class="cuisine left">
-				<a class="button" href="/cuisine/5">
-					<div class="container1">
-						<img class="image" src="/images/italian.jpg" alt="">
-						<div class="centered">Italian</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class="col-6 ourcol">
-			<div class="cuisine right">
-				<a class="button" href="/cuisine/6">
-					<div class="container1">
-						<img class="image" src="/images/mexican.jpg" alt="">
-						<div class="centered">Mexican</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
 
-	<div class="row ourrow lastRow">
-		<div class="col-6 ourcol">
-			<div class="cuisine left">
-				<a class="button" href="/cuisine/7">
-					<div class="container1">
-						<img class="image" src="/images/sushi.jpeg" alt="">
-						<div class="centered">Japanese</div>
-					</div>
-				</a>
+	{{#grouped_each 2 categories}}
+		<div class="row ourrow">
+		{{#each this}}
+			<div class="col-6 ourcol">
+				<div class="cuisine {{#if_even @index}}left{{/if_even}}{{#if_odd @index}}right{{/if_odd}}">
+					<a class="button" href="cuisine/{{id}}">
+						<div class="container1">
+							<img class="image" src={{imagePath}} alt={{name}}>
+							<div class="centered">{{name}}</div>
+						</div>
+					</a>
+				</div>
 			</div>
+		{{/each}}
 		</div>
-		<div class="col-6 ourcol">
-			<div class="cuisine right">
-				<a class="button" href="/cuisine/8">
-					<div class="container1">
-						<img class="image" src="/images/thai.jpg" alt="">
-						<div class="centered">Thai</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
+	{{/grouped_each}}
 	{{> navbar}}
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
