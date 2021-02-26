@@ -1,28 +1,12 @@
-
-/**
- * Module dependencies.
- */
-
 var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 
-var index = require('./routes/index');
-var login = require('./routes/login');
-var list = require('./routes/list');
-var library = require('./routes/library');
-var search = require('./routes/search');
-var preferences = require('./routes/preferences');
-var recipe = require('./routes/recipe');
-
-// Example route
-// var user = require('./routes/user');
-
+var viewLibrary = require('./routes/viewLibrary');
 var app = express();
 
-// all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3500);
 app.set('views', path.join(__dirname, 'views'));
 
 var hbs = handlebars.create({
@@ -63,9 +47,6 @@ var hbs = handlebars.create({
         return options.inverse(this);
       }
     },
-    json: function(context) {
-      return JSON.stringify(context);
-    },
     for: function(n, block) {
       var accum = '';
       for(var i = 0; i < n; ++i)
@@ -74,6 +55,7 @@ var hbs = handlebars.create({
     }
   }
 });
+
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
@@ -86,21 +68,17 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-// development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', login.view);
-app.get('/home', index.view);
-app.get('/cuisine/:id', list.view);
-app.get('/library', library.view);
-app.get('/search', search.view);
-app.get('/preferences', preferences.view);
-app.get('/recipe/:id', recipe.view);
-
-// Example route
-// app.get('/users', user.list);
+app.get('/', viewLibrary.login);
+app.get('/home', viewLibrary.home);
+app.get('/cuisine/:id', viewLibrary.cuisine_list);
+app.get('/library', viewLibrary.saved_recipes);
+app.get('/search', viewLibrary.search);
+app.get('/preferences', viewLibrary.preferences);
+app.get('/recipe/:id', viewLibrary.recipe);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -1,10 +1,10 @@
 {
-  "name": "IntroHCI",
+  "name": "yummyrecipes",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "author": "Tiffany Meng & Simonne Contreras",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "https://github.com/tiffany-meng/yummy-recipes"
   },
   "license": "MIT",
   "private": true,
