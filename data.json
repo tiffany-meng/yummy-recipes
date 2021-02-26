@@ -105,7 +105,67 @@
         {
             "name" : "Cheeseburger",
             "category" : 1,
-            "img": "",
+            "img": "cheeseburger.jpeg",
+            "time": 50,
+            "rating": 4,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 1
+        },
+        {
+            "name" : "Pulled Pork Sandwich",
+            "category" : 1,
+            "img": "pulled_pork.jpeg",
+            "time": 50,
+            "rating": 4,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 2
+        },
+        {
+            "name" : "Baked Potato",
+            "category" : 1,
+            "img": "baked_potato.jpeg",
+            "time": 50,
+            "rating": 4,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 3
+        },
+        {
+            "name" : "Cobb Salad",
+            "category" : 1,
+            "img": "cobb_salad.jpeg",
+            "time": 50,
+            "rating": 4,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 4
+        },
+        {
+            "name" : "Meatloaf",
+            "category" : 1,
+            "img": "meatloaf.jpeg",
+            "time": 50,
+            "rating": 4,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 5
+        },
+        {
+            "name" : "Chicken Kebabs",
+            "category" : 2,
+            "img": "chicken_kebab.jpeg",
+            "time": 50,
+            "rating": 4,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 6
+        },
+        {
+            "name" : "Brisket",
+            "category" : 2,
+            "img": "brisket.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -113,9 +173,9 @@
             "id" : 7
         },
         {
-            "name" : "Pulled Pork Sandwich",
-            "category" : 1,
-            "img": "",
+            "name" : "Baby Back Ribs",
+            "category" : 2,
+            "img": "baby_back_ribs.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -123,9 +183,9 @@
             "id" : 8
         },
         {
-            "name" : "Baked Potato",
-            "category" : 1,
-            "img": "",
+            "name" : "Arrumadinho",
+            "category" : 3,
+            "img": "arrumadinho.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -133,9 +193,9 @@
             "id" : 9
         },
         {
-            "name" : "Cobb Salad",
-            "category" : 1,
-            "img": "",
+            "name" : "Pirão",
+            "category" : 3,
+            "img": "pirao.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -143,9 +203,9 @@
             "id" : 10
         },
         {
-            "name" : "Meatloaf",
-            "category" : 1,
-            "img": "",
+            "name" : "Barreado",
+            "category" : 3,
+            "img": "barreado.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -153,9 +213,9 @@
             "id" : 11
         },
         {
-            "name" : "Cheeseburger",
-            "category" : 1,
-            "img": "",
+            "name" : "Salpicão",
+            "category" : 3,
+            "img": "salpicao.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -163,9 +223,9 @@
             "id" : 12
         },
         {
-            "name" : "Chicken Kebabs",
-            "category" : 2,
-            "img": "",
+            "name" : "Catfish",
+            "category" : 4,
+            "img": "catfish.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -173,9 +233,9 @@
             "id" : 13
         },
         {
-            "name" : "Brisket",
-            "category" : 2,
-            "img": "",
+            "name" : "Gumbo",
+            "category" : 4,
+            "img": "gumbo.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -183,9 +243,9 @@
             "id" : 14
         },
         {
-            "name" : "Baby Back Ribs",
-            "category" : 2,
-            "img": "",
+            "name" : "Crawfish Boil",
+            "category" : 4,
+            "img": "crawfish_boil.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -193,9 +253,9 @@
             "id" : 15
         },
         {
-            "name" : "Arrumadinho",
-            "category" : 3,
-            "img": "",
+            "name" : "Creole Rice",
+            "category" : 4,
+            "img": "creole_rice.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -203,9 +263,9 @@
             "id" : 16
         },
         {
-            "name" : "Pirão",
-            "category" : 3,
-            "img": "",
+            "name" : "Egg Rolls",
+            "category" : 5,
+            "img": "egg_rolls.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -213,9 +273,9 @@
             "id" : 17
         },
         {
-            "name" : "Barreado",
-            "category" : 3,
-            "img": "",
+            "name" : "Stir Fry",
+            "category" : 5,
+            "img": "stir_fry.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -223,9 +283,9 @@
             "id" : 18
         },
         {
-            "name" : "Salpicão",
-            "category" : 3,
-            "img": "",
+            "name" : "Broccoli Beef",
+            "category" : 5,
+            "img": "broccoli_beef.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -233,9 +293,9 @@
             "id" : 19
         },
         {
-            "name" : "Catfish",
-            "category" : 4,
-            "img": "",
+            "name" : "Bistec Empanizado",
+            "category" : 6,
+            "img": "bistec_empanizado.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -243,9 +303,9 @@
             "id" : 20
         },
         {
-            "name" : "Gumbo",
-            "category" : 4,
-            "img": "",
+            "name" : "Arroz Con Pollo",
+            "category" : 6,
+            "img": "arroz_con_pollo.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -253,9 +313,9 @@
             "id" : 21
         },
         {
-            "name" : "Crawfish Boil",
-            "category" : 4,
-            "img": "",
+            "name" : "Picadillo",
+            "category" : 6,
+            "img": "picadillo.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -263,9 +323,9 @@
             "id" : 22
         },
         {
-            "name" : "Creole Rice",
-            "category" : 4,
-            "img": "",
+            "name" : "Papas Rellenas",
+            "category" : 6,
+            "img": "papas_rellenas.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -273,9 +333,9 @@
             "id" : 23
         },
         {
-            "name" : "Egg Rolls",
-            "category" : 5,
-            "img": "",
+            "name" : "Ratatouille",
+            "category" : 7,
+            "img": "ratatouille.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -283,9 +343,9 @@
             "id" : 24
         },
         {
-            "name" : "Stir Fry",
-            "category" : 5,
-            "img": "",
+            "name" : "Quiche",
+            "category" : 7,
+            "img": "quiche.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -293,9 +353,9 @@
             "id" : 25
         },
         {
-            "name" : "Broccoli Beef",
-            "category" : 5,
-            "img": "",
+            "name" : "French Onion Soup",
+            "category" : 7,
+            "img": "french_onion_soup.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -303,9 +363,9 @@
             "id" : 26
         },
         {
-            "name" : "Bistec Empanezado",
-            "category" : 6,
-            "img": "",
+            "name" : "French Fries",
+            "category" : 7,
+            "img": "french_fries.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -313,9 +373,9 @@
             "id" : 27
         },
         {
-            "name" : "Arroz Con Pollo",
-            "category" : 6,
-            "img": "",
+            "name" : "Baguette",
+            "category" : 7,
+            "img": "baguette.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -323,9 +383,9 @@
             "id" : 28
         },
         {
-            "name" : "Picadillo",
-            "category" : 6,
-            "img": "",
+            "name" : "Sauerkraut Soup",
+            "category" : 8,
+            "img": "saurkraut_soup.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -333,9 +393,9 @@
             "id" : 29
         },
         {
-            "name" : "Papas Rellenas",
-            "category" : 6,
-            "img": "",
+            "name" : "Bratwurst",
+            "category" : 8,
+            "img": "bratwurst.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -343,9 +403,9 @@
             "id" : 30
         },
         {
-            "name" : "Ratatouille",
-            "category" : 7,
-            "img": "",
+            "name" : "Schwenkbraten",
+            "category" : 8,
+            "img": "schwenkbraten.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -353,9 +413,9 @@
             "id" : 31
         },
         {
-            "name" : "Quiche",
-            "category" : 7,
-            "img": "",
+            "name" : "Potato Pancakes",
+            "category" : 8,
+            "img": "potato_pancakes.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -363,9 +423,9 @@
             "id" : 32
         },
         {
-            "name" : "French Onion Soup",
-            "category" : 7,
-            "img": "",
+            "name" : "Shrimp Kebabs",
+            "category" : 9,
+            "img": "shrimp_kebabs.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -373,29 +433,9 @@
             "id" : 33
         },
         {
-            "name" : "French Fries",
-            "category" : 7,
-            "img": "",
-            "time": 50,
-            "rating": 4,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 33
-        },
-        {
-            "name" : "Baguette",
-            "category" : 7,
-            "img": "",
-            "time": 50,
-            "rating": 4,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 33
-        },
-        {
-            "name" : "Sauerkraut Soup",
-            "category" : 8,
-            "img": "",
+            "name" : "Mediterranean Tomato Salad",
+            "category" : 9,
+            "img": "mediterranean_tomato_salad.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -403,9 +443,9 @@
             "id" : 34
         },
         {
-            "name" : "Bratwurst",
-            "category" : 8,
-            "img": "",
+            "name" : "Baklava",
+            "category" : 9,
+            "img": "baklava.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -413,9 +453,9 @@
             "id" : 35
         },
         {
-            "name" : "Grilled German Porkchops",
-            "category" : 8,
-            "img": "",
+            "name" : "Vegan Chickpea Curry",
+            "category" : 10,
+            "img": "vegan_chickpea_curry.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -423,9 +463,9 @@
             "id" : 36
         },
         {
-            "name" : "Potato Pancakes",
-            "category" : 8,
-            "img": "",
+            "name" : "Chicken Tikka Masala",
+            "category" : 10,
+            "img": "chicken_tikka_masala.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -433,9 +473,9 @@
             "id" : 37
         },
         {
-            "name" : "Shrimp Kebabs",
-            "category" : 9,
-            "img": "",
+            "name" : "Vegetable Biryani",
+            "category" : 10,
+            "img": "vegan_biryani.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -443,9 +483,9 @@
             "id" : 38
         },
         {
-            "name" : "Mediterranean Tomato Salad",
-            "category" : 9,
-            "img": "",
+            "name" : "Chicken Alfredo",
+            "category" : 11,
+            "img": "chicken_alfredo.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -453,9 +493,9 @@
             "id" : 39
         },
         {
-            "name" : "Baklava",
-            "category" : 9,
-            "img": "",
+            "name" : "Tuscan Chicken",
+            "category" : 11,
+            "img": "tuscan_chicken.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -463,9 +503,9 @@
             "id" : 40
         },
         {
-            "name" : "Vegan Chickpea Curry",
-            "category" : 10,
-            "img": "",
+            "name" : "Margherita Pizza",
+            "category" : 11,
+            "img": "margherita_pizza.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -473,9 +513,9 @@
             "id" : 41
         },
         {
-            "name" : "Chicken Tikka Masala",
-            "category" : 10,
-            "img": "",
+            "name" : "Lasagna",
+            "category" : 11,
+            "img": "lasagna.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -483,9 +523,9 @@
             "id" : 42
         },
         {
-            "name" : "Vegetable Biryani",
-            "category" : 10,
-            "img": "",
+            "name" : "Chicken Teriyaki Bowl",
+            "category" : 12,
+            "img": "chicken_teriyaki.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -493,9 +533,9 @@
             "id" : 43
         },
         {
-            "name" : "Chicken Alfredo",
-            "category" : 11,
-            "img": "",
+            "name" : "Udon Noodles",
+            "category" : 12,
+            "img": "udon_noodles.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -503,9 +543,9 @@
             "id" : 44
         },
         {
-            "name" : "Tuscan Chicken",
-            "category" : 11,
-            "img": "",
+            "name" : "Miso Salmon",
+            "category" : 12,
+            "img": "miso_salmon.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -513,9 +553,9 @@
             "id" : 45
         },
         {
-            "name" : "Margherita Pizza",
-            "category" : 11,
-            "img": "",
+            "name" : "Japanese Chicken Curry",
+            "category" : 12,
+            "img": "japanese_chicken_curry.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -523,9 +563,9 @@
             "id" : 46
         },
         {
-            "name" : "Lasagna",
-            "category" : 11,
-            "img": "",
+            "name" : "Spicy Tuna Roll",
+            "category" : 12,
+            "img": "spicy_tuna_roll.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -533,9 +573,9 @@
             "id" : 47
         },
         {
-            "name" : "Chicken Teriyaki Bowl",
-            "category" : 12,
-            "img": "",
+            "name" : "Spicy Rice Cakes",
+            "category" : 13,
+            "img": "spicy_rice_cake.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -543,9 +583,9 @@
             "id" : 48
         },
         {
-            "name" : "Udon Noodles",
-            "category" : 12,
-            "img": "",
+            "name" : "Beef Bulgogi",
+            "category" : 13,
+            "img": "beef_bulgogi.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -553,9 +593,9 @@
             "id" : 49
         },
         {
-            "name" : "Miso Salmon",
-            "category" : 12,
-            "img": "",
+            "name" : "Kimchi Pancakes",
+            "category" : 13,
+            "img": "kimchi_pancake.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -563,9 +603,9 @@
             "id" : 50
         },
         {
-            "name" : "Japanese Chicken Curry",
-            "category" : 12,
-            "img": "",
+            "name" : "Lebanese Hushwee",
+            "category" : 14,
+            "img": "lebanese_hushwee.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -573,9 +613,9 @@
             "id" : 51
         },
         {
-            "name" : "Spicy Tuna Roll",
-            "category" : 12,
-            "img": "",
+            "name" : "Falafel",
+            "category" : 14,
+            "img": "falafel.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -583,9 +623,9 @@
             "id" : 52
         },
         {
-            "name" : "Spicy Rice Cakes",
-            "category" : 13,
-            "img": "",
+            "name" : "Chicken Shawarma",
+            "category" : 14,
+            "img": "chicken_shawarma.jpeg",
             "time": 50,
             "rating": 4,
             "calories": 340,
@@ -593,64 +633,14 @@
             "id" : 53
         },
         {
-            "name" : "Beef Bulgogi",
-            "category" : 13,
-            "img": "",
+            "name" : "Marinated Yogurt Cheese Balls",
+            "category" : 14,
+            "img": "marinated_yogurt_cheese_balls.jpg",
             "time": 50,
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
             "id" : 54
-        },
-        {
-            "name" : "Kimchi Pancakes",
-            "category" : 13,
-            "img": "",
-            "time": 50,
-            "rating": 4,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 55
-        },
-        {
-            "name" : "Lebanese Hushwee",
-            "category" : 14,
-            "img": "",
-            "time": 50,
-            "rating": 4,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 56
-        },
-        {
-            "name" : "Falafel",
-            "category" : 14,
-            "img": "",
-            "time": 50,
-            "rating": 4,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 57
-        },
-        {
-            "name" : "Chicken Shwarma",
-            "category" : 14,
-            "img": "",
-            "time": 50,
-            "rating": 4,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 58
-        },
-        {
-            "name" : "Marinated Yogurt Cheeseballs",
-            "category" : 14,
-            "img": "",
-            "time": 50,
-            "rating": 4,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 59
         },
         {
             "name" : "Hard Shell Tacos",
@@ -660,7 +650,7 @@
             "rating": 3,
             "calories": 450,
             "instructions": "Temp",
-            "id" : 60
+            "id" : 55
         },
         {
             "name" : "Chicken Fajitas",
@@ -670,7 +660,7 @@
             "rating": 4,
             "calories": 350,
             "instructions": "Temp",
-            "id" : 61
+            "id" : 56
         },
         {
             "name" : "Chile Verde Burrito",
@@ -680,7 +670,7 @@
             "rating": 4,
             "calories": 650,
             "instructions": "Temp",
-            "id" : 62
+            "id" : 57
         },
         {
             "name" : "Carne Asada Quesadilla",
@@ -690,7 +680,7 @@
             "rating": 5,
             "calories": 300,
             "instructions": "Temp",
-            "id" : 63
+            "id" : 58
         },
         {
             "name" : "Street Tacos",
@@ -700,7 +690,7 @@
             "rating": 3,
             "calories": 500,
             "instructions": "Temp",
-            "id" : 64
+            "id" : 59
         },
         {
             "name" : "Enchiladas",
@@ -710,12 +700,62 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 65
+            "id" : 60
         },
         {
             "name" : "Peruvian Roasted Chicken",
             "category" : 16,
-            "img": "",
+            "img": "peruvian_roasted_chicken.jpeg",
+            "time": 180,
+            "rating": 3,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 61
+        },
+        {
+            "name" : "Arroz Chaufa",
+            "category" : 16,
+            "img": "arroz_chaufa.jpeg",
+            "time": 180,
+            "rating": 3,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 62
+        },
+        {
+            "name" : "Chicken Skewers",
+            "category" : 16,
+            "img": "chicken_skewers.jpg",
+            "time": 180,
+            "rating": 3,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 63
+        },
+        {
+            "name" : "Yuca Fries",
+            "category" : 16,
+            "img": "yuca_fries.jpg",
+            "time": 180,
+            "rating": 3,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 64
+        },
+        {
+            "name" : "Collard Greens",
+            "category" : 17,
+            "img": "collard_greens.jpeg",
+            "time": 180,
+            "rating": 3,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 65
+        },
+        {
+            "name" : "Shrimp & Cheese Grits",
+            "category" : 17,
+            "img": "shrimp_cheese_grits.jpeg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -723,9 +763,9 @@
             "id" : 66
         },
         {
-            "name" : "Arroz Chavfa",
-            "category" : 16,
-            "img": "",
+            "name" : "Pork Chops",
+            "category" : 17,
+            "img": "pork_chops.jpg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -733,9 +773,9 @@
             "id" : 67
         },
         {
-            "name" : "Chicken Skewers",
-            "category" : 16,
-            "img": "",
+            "name" : "Croquettes",
+            "category" : 18,
+            "img": "croquettes.jpg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -743,9 +783,9 @@
             "id" : 68
         },
         {
-            "name" : "Yuca Fries",
-            "category" : 16,
-            "img": "",
+            "name" : "Paella",
+            "category" : 18,
+            "img": "paella.jpg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -753,9 +793,9 @@
             "id" : 69
         },
         {
-            "name" : "Collard Greens",
-            "category" : 17,
-            "img": "",
+            "name" : "Empanadas",
+            "category" : 18,
+            "img": "empanadas.jpg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -763,9 +803,9 @@
             "id" : 70
         },
         {
-            "name" : "Shrimp & Cheese Grits",
-            "category" : 17,
-            "img": "",
+            "name" : "Arroz con Leche",
+            "category" : 18,
+            "img": "arroz_con_leche.jpeg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -773,9 +813,9 @@
             "id" : 71
         },
         {
-            "name" : "Pork Chops",
-            "category" : 17,
-            "img": "",
+            "name" : "Pad Thai",
+            "category" : 19,
+            "img": "pad_thai.jpg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -783,9 +823,9 @@
             "id" : 72
         },
         {
-            "name" : "Croquets",
-            "category" : 18,
-            "img": "",
+            "name" : "Pad See Ew",
+            "category" : 19,
+            "img": "pad_see_ew.jpeg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -793,9 +833,9 @@
             "id" : 73
         },
         {
-            "name" : "Paella",
-            "category" : 18,
-            "img": "",
+            "name" : "Thai Coconut Curry",
+            "category" : 19,
+            "img": "thai_coconut_curry.jpeg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -803,9 +843,9 @@
             "id" : 74
         },
         {
-            "name" : "Empanadas",
-            "category" : 18,
-            "img": "",
+            "name" : "Sweet Potato Soup",
+            "category" : 19,
+            "img": "sweet_potato_soup.jpeg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -813,9 +853,9 @@
             "id" : 75
         },
         {
-            "name" : "Arroz con Leche",
-            "category" : 18,
-            "img": "",
+            "name" : "Lemongrass Chicken",
+            "category" : 20,
+            "img": "lemongrass_chicken.jpeg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -823,9 +863,9 @@
             "id" : 76
         },
         {
-            "name" : "Pad Thai",
-            "category" : 19,
-            "img": "",
+            "name" : "Vietnamese Fried Rice",
+            "category" : 20,
+            "img": "viet_fried_rice.jpeg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -833,9 +873,9 @@
             "id" : 77
         },
         {
-            "name" : "Pad See Ew",
-            "category" : 19,
-            "img": "",
+            "name" : "Pork Bone Soup",
+            "category" : 20,
+            "img": "pork_bone_soup.jpg",
             "time": 180,
             "rating": 3,
             "calories": 340,
@@ -843,64 +883,14 @@
             "id" : 78
         },
         {
-            "name" : "Thai Coconut Curry",
-            "category" : 19,
-            "img": "",
+            "name" : "Banh Mi",
+            "category" : 20,
+            "img": "banh_mi.jpg",
             "time": 180,
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
             "id" : 79
-        },
-        {
-            "name" : "Sweet Potato Soup",
-            "category" : 19,
-            "img": "",
-            "time": 180,
-            "rating": 3,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 80
-        },
-        {
-            "name" : "Lemongrass Chicken",
-            "category" : 20,
-            "img": "",
-            "time": 180,
-            "rating": 3,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 81
-        },
-        {
-            "name" : "Vietnamese Fried Rice",
-            "category" : 20,
-            "img": "",
-            "time": 180,
-            "rating": 3,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 82
-        },
-        {
-            "name" : "Pork Bone Soup",
-            "category" : 20,
-            "img": "",
-            "time": 180,
-            "rating": 3,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 83
-        },
-        {
-            "name" : "Banh Mi",
-            "category" : 20,
-            "img": "",
-            "time": 180,
-            "rating": 3,
-            "calories": 340,
-            "instructions": "Temp",
-            "id" : 84
         }
     ]
 }
