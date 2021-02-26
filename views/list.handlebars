@@ -2,18 +2,37 @@
     <head>
         <title>List Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
 	    <link rel="stylesheet" href="/css/stylesheet.css">
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script>
+            $(document).ready( function() {
+                    var url = window.location.href;
+                    var components = url.split('/');
+                    var id = components[components.length-1];
+                    var decodedJSON = decodeURIComponent("{{data}}");
+                    var data = JSON.parse(decodedJSON);
+                    var ourRecipes = data.recipes.filter(item=>item.category==id);
+                    var category = data.categories.find(item=>{return item.id==id}).name;
+                    console.log(typeof(window.location.href));
+                    document.getElementById("title").innerHTML=category;
+                }
+            );
+        </script>
     </head>
     <body>
         <div class="backButton">
-            <button onclick="window.location.href='/'" type="button" class="btn btn-lg">
+            <button onclick="window.location.href='/home'" type="button" class="btn btn-lg">
                 <span style="font-size: 30px;">
                     <i class="fas fa-arrow-left"></i>
                 </span>
             </button>
         </div>
-        <h1 class="title">Mexican</h1>
+        <h1 id="title" class="title"></h1>
         <div class="input-group rounded search">
             <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                 aria-describedby="search-addon" />
@@ -21,151 +40,35 @@
                 <i class="fas fa-search"></i>
             </span>
         </div>
-        <div class="recipe-center">
-            <div class="recipe">
-                <a class="bigbutton" href="/recipe/1">
-                    <div class="row recipe-block">
-                        <div class="col-4 recipe-col">
-                            <img class="small-image" src="/images/hard_shell_taco.jpg" alt="">	
-                        </div>
-                        <div class="col-7 info recipe-col">
-                            <h4>Hard Shell Tacos</h4>
-                            <p>20 mins 
-                                <span style="font-size: 8px;">
-                                    <i class="fas fa-circle"></i> 
-                                </span>
-                            450 cal</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <div class="col-1 recipe-col"> 
-                            <i class="fas fa-chevron-right icon-col"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="recipe-center">
-            <div class="recipe">
-                <a class="bigbutton" href="/recipe/2">
-                    <div class="row recipe-block">
-                        <div class="col-4 recipe-col">
-                            <img class="small-image" src="/images/fajitas.jpeg" alt="">	
-                        </div>
-                        <div class="col-7 info recipe-col">
-                            <h4>Chicken Fajitas</h4>
-                            <p>40 mins 
-                                <span style="font-size: 8px;">
-                                    <i class="fas fa-circle"></i> 
-                                </span>
-                            350 cal</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <div class="col-1 recipe-col"> 
-                            <i class="fas fa-chevron-right icon-col"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="recipe-center">
-            <div class="recipe">
-                <a class="bigbutton" href="/recipe/3">
-                    <div class="row recipe-block">
-                        <div class="col-4 recipe-col">
-                            <img class="small-image" src="/images/chile_verde.jpg" alt="">	
-                        </div>
-                        <div class="col-7 info recipe-col">
-                            <h4>Chile Verde Burrito</h4>
-                            <p>1 hour 
-                                <span style="font-size: 8px;">
-                                    <i class="fas fa-circle"></i> 
-                                </span>
-                            600 cal</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <div class="col-1 recipe-col"> 
-                            <i class="fas fa-chevron-right icon-col"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="recipe-center">
-            <div class="recipe">
-                <a class="bigbutton" href="/recipe/4">
-                    <div class="row recipe-block">
-                        <div class="col-4 recipe-col">
-                            <img class="small-image" src="/images/carne_asada_quesadillas.jpg" alt="">	
-                        </div>
-                        <div class="col-7 info recipe-col">
-                            <h4>Carne Asada Quesadilla</h4>
-                            <p>10 mins 
-                                <span style="font-size: 8px;">
-                                    <i class="fas fa-circle"></i> 
-                                </span>
-                            200 cal</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <div class="col-1 recipe-col"> 
-                            <i class="fas fa-chevron-right icon-col"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="recipe-center">
-            <div class="recipe">
-                <a class="bigbutton" href="/recipe/5">
-                    <div class="row recipe-block">
-                        <div class="col-4 recipe-col">
-                            <img class="small-image" src="/images/street_tacos.jpg" alt="">	
-                        </div>
-                        <div class="col-7 info recipe-col">
-                            <h4>Street Tacos</h4>
-                            <p>30 mins 
-                                <span style="font-size: 8px;">
-                                    <i class="fas fa-circle"></i> 
-                                </span>
-                            400 cal</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <div class="col-1 recipe-col"> 
-                            <i class="fas fa-chevron-right icon-col"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="recipe-center">
-            <div class="recipe lastRow">
-                <a class="bigbutton" href="/recipe/6">
-                    <div class="row recipe-block">
-                        <div class="col-4 recipe-col">
-                            <img class="small-image" src="/images/enchiladas.jpg" alt="">	
-                        </div>
-                        <div class="col-7 info recipe-col">
-                            <h4>Enchiladas</h4>
-                            <p>1 hr 30 mins 
-                                <span style="font-size: 8px;">
-                                    <i class="fas fa-circle"></i> 
-                                </span>
-                            550 cal</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <div class="col-1 recipe-col"> 
-                            <i class="fas fa-chevron-right icon-col"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        
-        {{> navbar}}
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+        {{#each data2}}
+                <div class="recipe-center">
+                    <div class="recipe">
+                        <a class="bigbutton" href="/recipe/{{id}}">
+                            <div class="row recipe-block">
+                                <div class="col-4 recipe-col">
+                                    <img class="small-image" src="{{img}}" alt="">	
+                                </div>
+                                <div class="col-7 info recipe-col">
+                                    <h4>{{name}}</h4>
+                                    <p>{{time}} minutes
+                                        <span style="font-size: 8px;">
+                                            <i class="fas fa-circle"></i> 
+                                        </span>
+                                    {{calories}} calories</p>
+                                    {{#for rating}}
+                                        <i class="fas fa-star"></i>
+                                    {{/for}}
+                                </div>
+                                <div class="col-1 recipe-col"> 
+                                    <i class="fas fa-chevron-right icon-col"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        {{/each}}
+
+        {{> navbar}}
     </body>
 </html>

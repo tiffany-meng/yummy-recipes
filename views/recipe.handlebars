@@ -6,13 +6,14 @@
     </head>
     <body>
         <div class="backButton">
-            <button onclick="window.location.href='/cuisine/1'" type="button" class="btn btn-lg">
+            <button onclick="window.location.href='/cuisine/{{catId}}'" type="button" class="btn btn-lg">
                 <span style="font-size: 30px;">
                     <i class="fas fa-arrow-left"></i>
                 </span>
             </button>
         </div>
-        <h1 class="title">Individual Recipe Page</h1>
+        <h1 class="title">{{name}}</h1>
+
         {{> navbar}}
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

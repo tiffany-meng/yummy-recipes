@@ -6,9 +6,10 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
+var login = require('./routes/login');
 var list = require('./routes/list');
 var library = require('./routes/library');
 var search = require('./routes/search');
@@ -56,11 +57,21 @@ var hbs = handlebars.create({
       }
     },
     if_string_equal: function(string1, string2, options) {
+      console.log("hello" + string2);
       if (string1 == string2) {
         return options.fn(this);
       } else {
         return options.inverse(this);
       }
+    },
+    json: function(context) {
+      return JSON.stringify(context);
+    },
+    for: function(n, block) {
+      var accum = '';
+      for(var i = 0; i < n; ++i)
+          accum += block.fn(i);
+      return accum;
     }
   }
 });
@@ -75,13 +86,22 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+/*app.use(function(req,res,next) {
+  console.log("here" + req.path);
+  if(req.path == "/cuisine/1") {
+    res.locals.category = "American";
+    res.locals.id = 1;
+  }
+  next();
+});*/
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', login.view);
+app.get('/home', index.view);
 app.get('/cuisine/:id', list.view);
 app.get('/library', library.view);
 app.get('/search', search.view);

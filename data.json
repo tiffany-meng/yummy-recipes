@@ -100,5 +100,77 @@
             "imagePath" : "/images/vietnamese.png",
             "id" : 20
         }
+    ],
+    "recipes": [
+        {
+            "name" : "Hard Shell Tacos",
+            "category" : 15,
+            "time": 20,
+            "img": "/images/hard_shell_taco.jpg",
+            "rating": 3,
+            "calories": 450,
+            "instructions": "Temp",
+            "id" : 1
+        },
+        {
+            "name" : "Chicken Fajitas",
+            "category" : 15,
+            "img": "/images/fajitas.jpeg",
+            "time": 30,
+            "rating": 4,
+            "calories": 350,
+            "instructions": "Temp",
+            "id" : 2
+        },
+        {
+            "name" : "Chile Verde Burrito",
+            "category" : 15,
+            "img": "/images/chile_verde.jpg",
+            "time": 45,
+            "rating": 4,
+            "calories": 650,
+            "instructions": "Temp",
+            "id" : 3
+        },
+        {
+            "name" : "Carne Asada Quesadilla",
+            "category" : 15,
+            "img": "/images/carne_asada_quesadillas.jpg",
+            "time": 30,
+            "rating": 5,
+            "calories": 300,
+            "instructions": "Temp",
+            "id" : 4
+        },
+        {
+            "name" : "Street Tacos",
+            "category" : 15,
+            "img": "/images/street_tacos.jpg",
+            "time": 25,
+            "rating": 3,
+            "calories": 500,
+            "instructions": "Temp",
+            "id" : 5
+        },
+        {
+            "name" : "Enchiladas",
+            "category" : 15,
+            "img": "/images/enchiladas.jpg",
+            "time": 180,
+            "rating": 3,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 6
+        },
+        {
+            "name" : "Cheeseburger",
+            "category" : 1,
+            "img": "",
+            "time": 50,
+            "rating": 4,
+            "calories": 340,
+            "instructions": "Temp",
+            "id" : 7
+        }
     ]
 }
