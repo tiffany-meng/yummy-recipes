@@ -226,3 +226,42 @@ body {
 .loginButton:focus {
     outline: none;
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #E6F2D6;
+    position: absolute !important;
+    width: 40% !important;
+    text-align: center;
+    bottom: 85px !important;
+    right: 0;
+}
+
+.modalLink {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #6C757D;
+}
+
+.modalLink:visited {
+    color: white;
+}
+
+.modalLink:active {
+    text-decoration: none;
+    color: white;
+    background-color: #444a50;
+}

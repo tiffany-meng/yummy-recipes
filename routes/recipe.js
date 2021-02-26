@@ -4,10 +4,10 @@ var data = require('../data.json');
  */
 
 exports.view = function(req, res){
-    var myId = req.params.id;
-    var name = getRecipeName(myId);
-    var cat = getCategoryId(myId);
-    res.render('recipe', {page: "home", name: name, catId: cat});
+    var id = req.params.id;
+    var name = getRecipeName(id);
+    var cat = getCategoryId(id);
+    res.render('recipe', {page: "home", name: name, category: cat});
   };
 
 function getCategoryId(id) {

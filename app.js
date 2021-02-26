@@ -57,7 +57,6 @@ var hbs = handlebars.create({
       }
     },
     if_string_equal: function(string1, string2, options) {
-      console.log("hello" + string2);
       if (string1 == string2) {
         return options.fn(this);
       } else {
@@ -86,14 +85,6 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-/*app.use(function(req,res,next) {
-  console.log("here" + req.path);
-  if(req.path == "/cuisine/1") {
-    res.locals.category = "American";
-    res.locals.id = 1;
-  }
-  next();
-});*/
 
 // development only
 if ('development' == app.get('env')) {
