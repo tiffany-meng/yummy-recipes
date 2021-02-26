@@ -1,22 +1,22 @@
 <div class="spacer">
 </div>
-<div class="footDiv">
-    <a href="/" class="iconwrapper active">
+<div id="navbar" class="footDiv">
+    <a href="/" class="iconwrapper {{#if_string_equal page "home"}}active{{/if_string_equal}}">
         <span class="navicon">
             <i class="fa fa-home"></i>
         </span>
     </a>
-    <a href="/library" class="iconwrapper">
+    <a href="/library" class="iconwrapper {{#if_string_equal page "library"}}active{{/if_string_equal}}">
         <span class="navicon">
             <i class="fas fa-heart"></i>
         </span>
     </a>
-    <a href="/search" class="iconwrapper">
+    <a href="/search" class="iconwrapper {{#if_string_equal page "search"}}active{{/if_string_equal}}">
         <span class="navicon">
             <i class="fas fa-search"></i>
         </span>
     </a>
-    <a href="/preferences" class="iconwrapper">
+    <a href="/preferences" class="iconwrapper {{#if_string_equal page "preferences"}}active{{/if_string_equal}}">
         <span class="navicon">
             <i class="fas fa-user-cog"></i>
         </span>

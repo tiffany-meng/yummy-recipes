@@ -4,5 +4,5 @@
  */
 
 exports.view = function(req, res){
-    res.render('preferences');
+    res.render('preferences', {page: "preferences"});
   };
