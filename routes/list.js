@@ -4,12 +4,20 @@ var data = require('../data.json');
  */
 
 exports.view = function(req, res){
-    var myId = req.params.id;
-    var ourData = getCategoryData(myId);
-    console.log(myId);
-    res.render('list', {page: "home", data: encodeURIComponent(JSON.stringify(data)), data2: ourData});
-  };
+    var id = req.params.id;
+    var filteredData = filterData(id);
+    var category = getCategory(id);
+    res.render('list', {
+      page: "home",
+      data: filteredData,
+      category: category,
+    });
+};
 
-function getCategoryData(id) {
+function filterData(id) {
   return data.recipes.filter(item=>item.category==id);
+}
+
+function getCategory(id) {
+  return data.categories.find(item => {return item.id == id}).name;
 }
