@@ -8,42 +8,17 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
-        <script>
-            function login(event) {
-                event.preventDefault();
-                var decodedJSON = decodeURIComponent("{{users}}");
-                var users = JSON.parse(decodedJSON);
-                var typedUsername = document.getElementById("Username").value;
-                var typedPassword = document.getElementById("Password").value;
-                var userResult = users.users.find(({username})=>{return username.trim()==typedUsername.trim()});
-                if(userResult != undefined) {
-                    if(typedPassword==userResult.password) {
-                        window.location.assign("/home");
-                    } else {
-                        window.location.assign("/");
-                    }
-                } else {
-                    window.location.assign("/");
-                }
-            }
-            $(document).ready(function() {
-                initializePage();
-            })
-            function initializePage() {
-                document.getElementById("loginButton").addEventListener("click", login);
-            }
-        </script>
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     </head>
     <body>
         <h1 class="loginTitle">YUM-MY Recipes</h1>
         <img src="/images/food-logo.jpg" alt="" class="logoImage">
-        <form id="loginform">
-            <input class="loginForm" type="text" placeholder="Username" id="Username">
-            <input class="loginForm" type="password" placeholder="Password" id="Password">
-            <input id="loginButton" class="loginButton" type="submit" value="Login">
-            <input class="signUpButton" type="submit" value="Sign Up">
+        <form id="loginform" method="GET" role="form" action="/home">
+            <input class="loginForm" type="text" placeholder="Username" name="username" id="username"></input>
+            <input class="loginForm" type="password" placeholder="Password" name="password" id="password"></input>
+            <input id="loginButton" class="loginButton" type="submit" value="Login"></input>
+            <input class="signUpButton" type="submit" value="Sign Up"></input>
         </form>
     </body>
 </html>

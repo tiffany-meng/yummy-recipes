@@ -1,15 +1,28 @@
 var users = require('../users.json');
 var data = require('../data.json');
+var currentUser;
 
 exports.login = function(req, res){
-    res.render('login', {users: encodeURIComponent(JSON.stringify(users))});
+    res.render('login');
 };
 
 exports.home = function(req, res){
-    res.render('index', {
-        data: data,
-        page: "home",
-    });
+    var typedUsername = req.query.username;
+    var typedPassword = req.query.password;
+    var userResult = users.users.find(({username})=>{return username.trim()==typedUsername.trim()});
+    if(userResult != undefined) {
+        if(typedPassword==userResult.password) {
+            currentUser = userResult;
+            res.render('index', {
+                data: data,
+                page: "home",
+            });
+        } else {
+            res.render('login');
+        }
+    } else {
+        res.render('login');
+    }
 };
 
 exports.cuisine_list = function(req, res){
@@ -47,7 +60,12 @@ exports.recipe = function(req, res){
 };
 
 exports.saveRecipe = function(req, res) {
-    console.log("entering save recipe function");
+    let id = req.query.id;
+    let recipe = getRecipeByID(id);
+    let userIndex = users.users.findIndex(item => {return item.username==currentUser.username});
+    users.users[userIndex].saved_recipes.push(id);
+    console.log(users.users[userIndex].saved_recipes);
+    res.render('recipe',  {page: "home", id: id, name: recipe.name, category: recipe.category});
 }
 
 // Helper functions to filter data
