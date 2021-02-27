@@ -74,7 +74,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', viewLibrary.login);
 app.post('/', viewLibrary.loginAttempt);
-app.post('/signup', viewLibrary.signup)
+app.post('/signup', viewLibrary.signup);
 app.get('/home', viewLibrary.home);
 app.get('/cuisine/:id', viewLibrary.cuisine_list);
 app.get('/library', viewLibrary.saved_recipes);
