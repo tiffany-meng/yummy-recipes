@@ -13,12 +13,17 @@ exports.home = function(req, res){
 };
 
 exports.cuisine_list = function(req, res){
-    var id = req.params.id;
-    var filteredData = filterDataByCategory(id);
-    var category = getCategoryByID(id);
+    let id = req.params.id;
+    let filteredData = filterDataByCategory(id);
+    let truncatedData = filteredData.map(item => {
+        let obj = Object.assign({}, item);
+        obj.name = truncateLongName(item.name)
+        return obj;
+    });
+    let category = getCategoryByID(id);
     res.render('list', {
       page: "home",
-      data: filteredData,
+      data: truncatedData,
       category: category.name,
     });
 };
@@ -36,10 +41,14 @@ exports.preferences = function(req, res){
 };
 
 exports.recipe = function(req, res){
-    var id = req.params.id;
-    var recipe = getRecipeByID(id);
-    res.render('recipe', {page: "home", name: recipe.name, category: recipe.category});
+    let id = req.params.id;
+    let recipe = getRecipeByID(id);
+    res.render('recipe', {page: "home", id: id, name: recipe.name, category: recipe.category});
 };
+
+exports.saveRecipe = function(req, res) {
+    console.log("entering save recipe function");
+}
 
 // Helper functions to filter data
 function filterDataByCategory(id) {
@@ -52,4 +61,12 @@ function getCategoryByID(id) {
 
 function getRecipeByID(id) {
     return data.recipes.find(item=>{return item.id==id});
+}
+
+function truncateLongName(name) {
+    if (name.length > 12) {
+        return name.substring(0,12).trim() + "...";
+    } else {
+        return name;
+    }
 }
