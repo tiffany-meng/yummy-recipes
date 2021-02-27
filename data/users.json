@@ -1,14 +1,20 @@
 {
     "users": [
         {
-            "username": "Scott",
+            "username": "scott",
             "password": "password",
             "saved_recipes": [],
             "preferences": []
         },
         {
-            "username": "Tiffany",
+            "username": "tmeng",
             "password": "password2",
+            "saved_recipes": [],
+            "preferences": []
+        },
+        {
+            "username": "sccontre",
+            "password": "fakepass",
             "saved_recipes": [],
             "preferences": []
         }

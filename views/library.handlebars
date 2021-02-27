@@ -3,9 +3,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="/css/stylesheet.css">
 	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <h1 class="title">Library Page</h1>
+            {{#each recipes}}
+                <div class="recipe-center">
+                    <div class="recipe">
+                        <a class="bigbutton" href="/recipe/{{id}}">
+                            <div class="row recipe-block">
+                                <div class="col-4 recipe-col">
+                                    <img class="small-image" src="{{img}}" alt="">	
+                                </div>
+                                <div class="col-7 info recipe-col">
+                                    <h4>{{name}}</h4>
+                                    <p>{{time}} mins &middot {{calories}} calories</p>
+                                    {{#for rating}}
+                                        <i class="fas fa-star"></i>
+                                    {{/for}}
+                                </div>
+                                <div class="col-1 recipe-col"> 
+                                    <i class="fas fa-chevron-right icon-col"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {{/each}}
         {{> navbar}}
         
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

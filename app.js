@@ -73,13 +73,15 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', viewLibrary.login);
+app.post('/', viewLibrary.loginAttempt);
+app.post('/signup', viewLibrary.signup)
 app.get('/home', viewLibrary.home);
 app.get('/cuisine/:id', viewLibrary.cuisine_list);
 app.get('/library', viewLibrary.saved_recipes);
 app.get('/search', viewLibrary.search);
 app.get('/preferences', viewLibrary.preferences);
 app.get('/recipe/:id', viewLibrary.recipe);
-app.get('/saverecipe', viewLibrary.saveRecipe)
+app.post('/recipe/:id', viewLibrary.saveRecipe);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

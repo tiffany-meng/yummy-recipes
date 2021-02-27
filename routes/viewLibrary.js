@@ -1,29 +1,89 @@
-var users = require('../users.json');
-var data = require('../data.json');
+var users = require('../data/users.json');
+var data = require('../data/data.json');
 var currentUser;
 
 exports.login = function(req, res){
-    res.render('login');
+    if (req.query.account == "created") {
+        res.render('login', {
+            failed: false,
+            signupsuccess: true
+        });
+    } else {
+        res.render('login', {
+            failed: false,
+            signupsuccess: false
+        });
+    }
 };
 
 exports.home = function(req, res){
-    var typedUsername = req.query.username;
-    var typedPassword = req.query.password;
-    var userResult = users.users.find(({username})=>{return username.trim()==typedUsername.trim()});
+    res.render('index', {
+        data: data,
+        page: "home",
+    });
+};
+
+exports.loginAttempt = function(req, res) {
+    var passed_username = req.body.username;
+    var passed_password = req.body.password;
+    var userResult = users.users.find(({username})=>{return username.trim()==passed_username.trim()});
     if(userResult != undefined) {
-        if(typedPassword==userResult.password) {
+        if(passed_password==userResult.password) {
             currentUser = userResult;
-            res.render('index', {
-                data: data,
-                page: "home",
-            });
+            res.redirect('/home')
         } else {
-            res.render('login');
+            res.render('login', {
+                failed: true
+            });
         }
     } else {
-        res.render('login');
+        res.render('login', {
+            failed: true
+        });
     }
-};
+}
+
+exports.signup = function(req, res) {
+    if (req.body.login == "true") {
+        console.log("From login")
+        res.render('signup', {
+            failed: false,
+            errorMsg: undefined
+        });
+    } else {
+        var passed_username = req.body.username;
+        var passed_password = req.body.password;
+        var passed_password2 = req.body.password2;
+        if (passed_username == '' || passed_password == '' || passed_password2 == '') {
+            console.log("Fill all fields to create an account!");
+            res.render('signup', {
+                failed: true,
+                errorMsg: "Fill all fields to create an account!"
+            })
+        } else {
+            var userResult = users.users.find(({username})=>{return username.trim()==passed_username.trim()});
+            if (passed_password != passed_password2) {
+                res.render('signup', {
+                    failed: true,
+                    errorMsg: "Passwords do not match!"
+                })
+            } else if (userResult != undefined) {
+                res.render('signup', {
+                    failed: true,
+                    errorMsg: "Username already taken!"
+                })
+            } else {
+                users.users.push({
+                    "username" : passed_username,
+                    "password" : passed_password,
+                    "saved_recipes" : [],
+                    "preferences" : []
+                })
+                res.redirect('/?account=created');
+            }
+        }
+    }
+}
 
 exports.cuisine_list = function(req, res){
     let id = req.params.id;
@@ -42,7 +102,9 @@ exports.cuisine_list = function(req, res){
 };
 
 exports.saved_recipes = function(req, res){
-    res.render('library', {page: "library"});
+    let userIndex = users.users.findIndex(item => {return item.username==currentUser.username});
+    let savedRecipes = users.users[userIndex].saved_recipes;
+    res.render('library', {page: "library", recipes: savedRecipes});
 };
 
 exports.search = function(req, res){
@@ -60,11 +122,10 @@ exports.recipe = function(req, res){
 };
 
 exports.saveRecipe = function(req, res) {
-    let id = req.query.id;
+    let id = req.params.id;
     let recipe = getRecipeByID(id);
     let userIndex = users.users.findIndex(item => {return item.username==currentUser.username});
-    users.users[userIndex].saved_recipes.push(id);
-    console.log(users.users[userIndex].saved_recipes);
+    users.users[userIndex].saved_recipes.push(recipe);
     res.render('recipe',  {page: "home", id: id, name: recipe.name, category: recipe.category});
 }
 
