@@ -9,15 +9,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1 class="title">Categories</h1>
-	<div class="input-group rounded search">
-		<input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-			aria-describedby="search-addon" />
-		<span class="input-group-text border-0" id="search-addon">
-			<i class="fas fa-search"></i>
-		</span>
+	<div class="sticky-header">
+		<h1 class="title">Categories</h1>
+		<div class="input-group rounded search">
+			<input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+				aria-describedby="search-addon" />
+			<span class="input-group-text border-0" id="search-addon">
+				<i class="fas fa-search"></i>
+			</span>
+		</div>
 	</div>
-
+	<div class="top-spacer">
+	</div>
 	{{#grouped_each 2 data.categories}}
 		<div class="row ourrow">
 		{{#each this}}
