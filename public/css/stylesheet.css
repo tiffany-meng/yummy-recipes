@@ -147,7 +147,7 @@ body {
 .backButton {
     z-index: 2;
     position: absolute;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .ourcol {
@@ -301,7 +301,7 @@ body {
 .badbanner {
     background-color: #F0052C;
     border-radius: 7px;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
     width: 98vw;
     margin-top: 1vw;
@@ -318,7 +318,7 @@ body {
 .goodbanner {
     background-color: #80C529;
     border-radius: 7px;
-    padding: 8px;
+    padding: 10px;
     text-align: center;
     width: 98vw;
     margin-top: 1vw;

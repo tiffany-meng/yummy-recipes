@@ -45,7 +45,6 @@ exports.loginAttempt = function(req, res) {
 
 exports.signup = function(req, res) {
     if (req.body.login == "true") {
-        console.log("From login")
         res.render('signup', {
             failed: false,
             errorMsg: undefined
@@ -55,7 +54,6 @@ exports.signup = function(req, res) {
         var passed_password = req.body.password;
         var passed_password2 = req.body.password2;
         if (passed_username == '' || passed_password == '' || passed_password2 == '') {
-            console.log("Fill all fields to create an account!");
             res.render('signup', {
                 failed: true,
                 errorMsg: "Fill all fields to create an account!"
