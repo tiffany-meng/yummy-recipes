@@ -13,46 +13,47 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div class="backButton">
-            <button onclick="window.history.back()" type="button" class="btn btn-lg">
-                <span class="arrow">
-                    <i class="fas fa-arrow-left"></i>
-                </span>
-            </button>
+        <div class="sticky-header">
+            <div class="backButton">
+                <button onclick="window.history.back()" type="button" class="btn btn-lg">
+                    <span class="arrow">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                </button>
+            </div>
+            <h1 id="title" class="title">{{category}}</h1>
+            <form class="search" id="searchform" method="GET" role="form" action="/cuisine/{{id}}">
+                <input type="text" class="search-text" name="search" id="search" placeholder="Search"/>
+                <button id="search-addon" type="submit" class="search-icon btn">
+                    <span class="search-icon1">
+                        <i class="fas fa-search icon-color"></i>
+                    </span>	
+                </button>
+            </form>
         </div>
-        <h1 id="title" class="title">{{category}}</h1>
-        <div class="input-group rounded search">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                aria-describedby="search-addon" />
-            <span class="input-group-text border-0" id="search-addon">
-                <i class="fas fa-search"></i>
-            </span>
-        </div>
-
+        <div class="top-spacer">
+	    </div>
         {{#each data}}
-            <div class="recipe-center">
-                <div class="recipe">
-                    <a class="bigbutton" href="/recipe/{{id}}">
-                        <div class="row recipe-block">
-                            <div class="col-4 recipe-col">
-                                <img class="small-image" src="{{img}}" alt="">	
-                            </div>
-                            <div class="col-7 info recipe-col">
-                                <h4>{{name}}</h4>
-                                <p>{{time}} mins &middot {{calories}} calories</p>
-                                {{#for rating}}
-                                    <i class="fas fa-star"></i>
-                                {{/for}}
-                            </div>
-                            <div class="col-1 recipe-col"> 
-                                <i class="fas fa-chevron-right icon-col"></i>
-                            </div>
+            <div class="recipe">
+                <a class="bigbutton" href="/recipe/{{id}}">
+                    <div class="row recipe-block">
+                        <div class="col-4 recipe-col">
+                            <img class="small-image" src="{{img}}" alt="">	
                         </div>
-                    </a>
-                </div>
+                        <div class="col-7 info recipe-col">
+                            <h4 class="recipe-title">{{name}}</h4>
+                            <p>{{time}} mins &middot {{calories}} calories</p>
+                            {{#for rating}}
+                                <i class="fas fa-star"></i>
+                            {{/for}}
+                        </div>
+                        <div class="col-1 recipe-col"> 
+                            <i class="fas fa-chevron-right icon-col"></i>
+                        </div>
+                    </div>
+                </a>
             </div>
         {{/each}}
-
         {{> navbar}}
     </body>
 </html>

@@ -17,6 +17,10 @@ body {
     width: 100%;
 }
 
+.home-button {
+    width: inherit;
+}
+
 .centered {
     position: absolute;
     top: 50%;
@@ -79,12 +83,16 @@ body {
 .image {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 1px solid #212529;
 }
 
+.icon-color {
+    color: black;
+}
+
 .top-spacer {
-    height: 120px;
+    height: 115px;
 }
 
 .sticky-header {
@@ -96,12 +104,41 @@ body {
     background-color: #C0ECD7;
 }
 
+.search-text {
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px;
+    width: 70vw;
+    border: solid 1px black;
+}
+
+.search-text:focus {
+    outline: none;
+    border: solid 2px black;
+}
+
+.search-icon {
+    background-color: transparent !important;
+    display: inline-block;
+    width: 12vw;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
 .search {
     padding-top: 4px;
-    padding-bottom: 15px;
+    margin-bottom: 0px !important;
+    padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 85% !important;
+    display: block;
+    text-align: center;
+    width: 100vw !important;
 }
 
 .title {
@@ -114,14 +151,25 @@ body {
     font-size: 30px;
 }
 
+.small-logo {
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .recipe {
-    height: 150px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height: 120px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
     border: 1px solid #212529;
     border-radius: 20px;
     position: relative;
-    padding: 0;
+    background-color: #EFFAF5;
+    margin: auto;
+    width: 90%;
 }
 
 .small-image {
@@ -141,6 +189,17 @@ body {
     margin: 0 !important;
 }
 
+::selection {
+    color: black;
+    text-decoration: none;
+}
+
+.recipe-title {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
 .recipe-center {
     margin: auto;
     width: 90%;
@@ -157,6 +216,16 @@ body {
 
 .bigbutton {
     color: black;
+}
+
+.bigbutton:active {
+    color: black;
+    text-decoration: none;
+}
+
+.bigbutton:hover {
+    color: black;
+    text-decoration: none;
 }
 
 .icon-col {
@@ -374,5 +443,10 @@ body {
 
 .arrow {
     font-size: 35px;
+    color: #212529;
+}
+
+.search-icon1 {
+    font-size: 25px;
     color: #212529;
 }

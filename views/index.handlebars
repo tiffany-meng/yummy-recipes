@@ -11,18 +11,21 @@
 </head>
 <body>
 	<div class="sticky-header">
-		<h1 class="title">Categories</h1>
-		<div class="input-group rounded search">
-			<input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-				aria-describedby="search-addon" />
-			<span class="input-group-text border-0" id="search-addon">
-				<i class="fas fa-search"></i>
-			</span>
-		</div>
+		<a class="small-logo" href="home">
+			<img src="/images/food-logo-small.png" class="home-button"/>
+		</a>
+		<form class="search" id="searchform" method="GET" role="form" action="/home">
+			<input type="text" class="search-text" name="search" id="search" placeholder="Search"/>
+			<button id="search-addon" type="submit" class="search-icon btn">
+				<span class="search-icon1">
+					<i class="fas fa-search icon-color"></i>
+				</span>	
+			</button>
+		</form>
 	</div>
 	<div class="top-spacer">
 	</div>
-	{{#grouped_each 2 data.categories}}
+	{{#grouped_each 2 data}}
 		<div class="row ourrow">
 		{{#each this}}
 			<div class="col-6 ourcol">

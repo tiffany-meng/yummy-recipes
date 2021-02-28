@@ -1,3 +1,4 @@
+const Fuse = require('fuse.js');
 var users = require('../data/users.json');
 var data = require('../data/data.json');
 var currentUser;
@@ -16,17 +17,21 @@ exports.login = function(req, res){
     }
 };
 
-exports.home = function(req, res){
+exports.home = function(req, res) {
+    let filteredData = data.categories;
+    if (req.query.search != undefined && req.query.search != '') {
+        filteredData = findCategorySearchMatches(req.query.search);
+    }
     res.render('index', {
-        data: data,
+        data: filteredData,
         page: "home",
     });
 };
 
 exports.loginAttempt = function(req, res) {
-    var passed_username = req.body.username;
-    var passed_password = req.body.password;
-    var userResult = users.users.find(({username})=>{return username.trim()==passed_username.trim()});
+    let passed_username = req.body.username;
+    let passed_password = req.body.password;
+    let userResult = users.users.find(({username})=>{return username.trim()==passed_username.trim()});
     if(userResult != undefined) {
         if(passed_password==userResult.password) {
             currentUser = userResult;
@@ -50,16 +55,16 @@ exports.signup = function(req, res) {
             errorMsg: undefined
         });
     } else {
-        var passed_username = req.body.username;
-        var passed_password = req.body.password;
-        var passed_password2 = req.body.password2;
+        let passed_username = req.body.username;
+        let passed_password = req.body.password;
+        let passed_password2 = req.body.password2;
         if (passed_username == '' || passed_password == '' || passed_password2 == '') {
             res.render('signup', {
                 failed: true,
                 errorMsg: "Fill all fields to create an account!"
             })
         } else {
-            var userResult = users.users.find(({username})=>{return username.trim()==passed_username.trim()});
+            let userResult = users.users.find(({username})=>{return username.trim()==passed_username.trim()});
             if (passed_password != passed_password2) {
                 res.render('signup', {
                     failed: true,
@@ -86,6 +91,12 @@ exports.signup = function(req, res) {
 exports.cuisine_list = function(req, res){
     let id = req.params.id;
     let filteredData = filterDataByCategory(id);
+    filteredData.sort(function(a, b) {
+        return a.name.toUpperCase() < b.name.toUpperCase() ? -1 : 1;
+    })
+    if (req.query.search != undefined && req.query.search != '') {
+        filteredData = findRecipeSearchMatches(req.query.search, filteredData);
+    }
     let truncatedData = filteredData.map(item => {
         let obj = Object.assign({}, item);
         obj.name = truncateLongName(item.name)
@@ -93,6 +104,7 @@ exports.cuisine_list = function(req, res){
     });
     let category = getCategoryByID(id);
     res.render('list', {
+      id: id,
       page: "home",
       data: truncatedData,
       category: category.name,
@@ -141,9 +153,25 @@ function getRecipeByID(id) {
 }
 
 function truncateLongName(name) {
-    if (name.length > 12) {
-        return name.substring(0,12).trim() + "...";
+    if (name.length > 14) {
+        return name.substring(0,14).trim() + "...";
     } else {
         return name;
     }
+}
+
+function findCategorySearchMatches(searchString) {
+    const fuse = new Fuse(data.categories, {
+        keys: ['name']
+    })
+    const result = fuse.search(searchString);
+    return result.map(item => item.item);
+}
+
+function findRecipeSearchMatches(searchString, data) {
+    const fuse = new Fuse(data, {
+        keys: ['name', 'img']
+    })
+    const result = fuse.search(searchString);
+    return result.map(item=>item.item);
 }
