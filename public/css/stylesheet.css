@@ -450,3 +450,15 @@ body {
     font-size: 25px;
     color: #212529;
 }
+
+.emptySave {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.emptyIcon {
+    font-size: 40px;
+}

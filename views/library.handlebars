@@ -10,29 +10,38 @@
     </head>
     <body>
         <h1 class="title">Library Page</h1>
-            {{#each recipes}}
-                <div class="recipe-center">
-                    <div class="recipe">
-                        <a class="bigbutton" href="/recipe/{{id}}">
-                            <div class="row recipe-block">
-                                <div class="col-4 recipe-col">
-                                    <img class="small-image" src="{{img}}" alt="">	
-                                </div>
-                                <div class="col-7 info recipe-col">
-                                    <h4>{{name}}</h4>
-                                    <p>{{time}} mins &middot {{calories}} calories</p>
-                                    {{#for rating}}
-                                        <i class="fas fa-star"></i>
-                                    {{/for}}
-                                </div>
-                                <div class="col-1 recipe-col"> 
-                                    <i class="fas fa-chevron-right icon-col"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+            {{#if empty}}
+                <div class="emptySave">
+                    <i class="emptyIcon fas fa-utensils"></i>
+                    <h3>oops!</h3>
+                    <p>You have no saved recipes, navigate to the home page to check out some new recipes</p>
+                    <button onclick="window.location.href='/home'" type="button" class="btn btn-outline-secondary emptyButton">Home</button>
                 </div>
-            {{/each}}
+            {{else}}
+                {{#each recipes}}
+                    <div class="recipe-center">
+                        <div class="recipe">
+                            <a class="bigbutton" href="/recipe/{{id}}">
+                                <div class="row recipe-block">
+                                    <div class="col-4 recipe-col">
+                                        <img class="small-image" src="{{img}}" alt="">	
+                                    </div>
+                                    <div class="col-7 info recipe-col">
+                                        <h4>{{name}}</h4>
+                                        <p>{{time}} mins &middot {{calories}} calories</p>
+                                        {{#for rating}}
+                                            <i class="fas fa-star"></i>
+                                        {{/for}}
+                                    </div>
+                                    <div class="col-1 recipe-col"> 
+                                        <i class="fas fa-chevron-right icon-col"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                {{/each}}
+            {{/if}}
         {{> navbar}}
         
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -114,7 +114,8 @@ exports.cuisine_list = function(req, res){
 exports.saved_recipes = function(req, res){
     let userIndex = users.users.findIndex(item => {return item.username==currentUser.username});
     let savedRecipes = users.users[userIndex].saved_recipes;
-    res.render('library', {page: "library", recipes: savedRecipes});
+    let empty = savedRecipes.length == 0 ? true : false; 
+    res.render('library', {page: "library", recipes: savedRecipes, empty: empty});
 };
 
 exports.search = function(req, res){
