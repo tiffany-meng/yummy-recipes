@@ -82,6 +82,7 @@ app.get('/search', viewLibrary.search);
 app.get('/preferences', viewLibrary.preferences);
 app.get('/recipe/:id', viewLibrary.recipe);
 app.post('/recipe/:id', viewLibrary.saveRecipe);
+app.get('/savedrecipe/:id', viewLibrary.recipe);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

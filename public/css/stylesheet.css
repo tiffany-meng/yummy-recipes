@@ -462,3 +462,70 @@ body {
 .emptyIcon {
     font-size: 40px;
 }
+
+.recipeImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+   
+}
+
+.container2 {
+    width: 100%;
+    height: 50%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.label2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: black;
+    bottom: 10;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 90%;
+    height: 30%;
+    margin-top: -70px;
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+}
+.saveButton {
+    display: block;
+    margin-left: auto;
+    margin-right: 65;
+    width: 40px;
+    height: 40px;
+    margin-top: -190px;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+.heartButton {
+    padding: 0 !important;
+}
+
+.saveForm {
+    text-align: center
+}
+
+.savedHeart{
+    color:#f86280
+}
+
+.unsavedHeart {
+    color: grey;
+}
+
+.instructions {
+    width: 90%;
+    margin: auto;
+    padding-top: 10;
+}

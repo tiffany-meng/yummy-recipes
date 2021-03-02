@@ -14,16 +14,45 @@
     </head>
     <body>
         <div class="backButton">
-            <button onclick="window.history.back()" type="button" class="btn btn-lg">
+            <button onclick="window.location.href='{{backPath}}'" type="button" class="btn btn-lg">
                 <span class="arrow">
                     <i class="fas fa-arrow-left"></i>
                 </span>
             </button>
         </div>
-        <h1 class="title">{{name}}</h1>
-        <form role="form" method="POST" action="/recipe/{{id}}">
-            <input type="submit" id="saveRecipe" class="btn btn-default" value="Save Recipe"></input>
-        </form>
+        <h1 class="title">{{recipe.name}}</h1>
+        <div class="container2">
+            <img src="{{recipe.img}}" alt="" class="recipeImage">
+            <div class="label2">
+                <div class="row">
+                    <div class="col-8">
+                         <h4>{{recipe.name}}</h4> 
+                         <p>{{recipe.time}} mins &middot {{recipe.calories}} calories</p>
+                    </div>
+                    <div class="col-4">
+                        {{#for recipe.rating}}
+                                <i class="fas fa-star"></i>
+                        {{/for}}
+                    </div>
+                </div>
+            </div>
+            <div class="saveButton">
+                <form role="form" method="POST" class="saveForm" action="/recipe/{{recipe.id}}">
+                    <input type="hidden" name="backPath" id="backPath" value="{{backPath}}">
+                    <button type="submit" class="btn btn-custom heartButton" name="like">
+                        <span class="fa-stack fa-2x" style="vertical-align: top;">
+                        <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fas fa-heart fa-stack-1x {{#if saved}}savedHeart{{/if}} {{#unless saved}}unsavedHeart{{/unless}}"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="instructions">
+            <h3>Ingredients</h3>
+            <h3>Instructions</h3>
+            {{recipe.instructions}}
+        </div>
         {{> navbar}}
     </body>
 </html>

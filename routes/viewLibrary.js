@@ -103,6 +103,7 @@ exports.cuisine_list = function(req, res){
         return obj;
     });
     let category = getCategoryByID(id);
+
     res.render('list', {
       id: id,
       page: "home",
@@ -127,17 +128,52 @@ exports.preferences = function(req, res){
 };
 
 exports.recipe = function(req, res){
+    let url = req.path;
+    let path = url.split("/")[1];
+    let backPath;
     let id = req.params.id;
     let recipe = getRecipeByID(id);
-    res.render('recipe', {page: "home", id: id, name: recipe.name, category: recipe.category});
+
+    if(path == "recipe") {
+        backPath = `/cuisine/${recipe.category}`;
+    } else {
+        backPath = "/library";
+    }
+    let userIndex = users.users.findIndex(item => {return item.username==currentUser.username});
+    let saved = users.users[userIndex].saved_recipes.findIndex(item => {return item==recipe});
+
+    console.log(backPath);
+    res.render('recipe', {page: "home", id: id, recipe: recipe, saved: saved==-1?false:true, backPath: backPath});
 };
 
 exports.saveRecipe = function(req, res) {
+    let backPath = req.body.backPath;
     let id = req.params.id;
     let recipe = getRecipeByID(id);
     let userIndex = users.users.findIndex(item => {return item.username==currentUser.username});
-    users.users[userIndex].saved_recipes.push(recipe);
-    res.render('recipe',  {page: "home", id: id, name: recipe.name, category: recipe.category});
+    let alreadySaved = users.users[userIndex].saved_recipes.findIndex(item => {return item==recipe});
+    if(alreadySaved != -1) {
+        console.log("already saved, removing..");
+        users.users[userIndex].saved_recipes.splice(alreadySaved,1);
+    } else {
+        console.log("not saved, saving..");
+        users.users[userIndex].saved_recipes.push(recipe);
+    }
+
+    let path = backPath.split("/")[1];
+    let fromSave;
+
+    if(path == "cuisine") {
+        fromSave = false;
+    } else {
+        fromSave = true;
+    }
+
+    if(fromSave) {
+        res.redirect(`/savedrecipe/${id}`);
+    } else {
+        res.redirect(`/recipe/${id}`);
+    }
 }
 
 // Helper functions to filter data

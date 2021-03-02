@@ -19,26 +19,24 @@
                 </div>
             {{else}}
                 {{#each recipes}}
-                    <div class="recipe-center">
-                        <div class="recipe">
-                            <a class="bigbutton" href="/recipe/{{id}}">
-                                <div class="row recipe-block">
-                                    <div class="col-4 recipe-col">
-                                        <img class="small-image" src="{{img}}" alt="">	
-                                    </div>
-                                    <div class="col-7 info recipe-col">
-                                        <h4>{{name}}</h4>
-                                        <p>{{time}} mins &middot {{calories}} calories</p>
-                                        {{#for rating}}
-                                            <i class="fas fa-star"></i>
-                                        {{/for}}
-                                    </div>
-                                    <div class="col-1 recipe-col"> 
-                                        <i class="fas fa-chevron-right icon-col"></i>
-                                    </div>
+                    <div class="recipe">
+                        <a class="bigbutton" href="/savedrecipe/{{id}}">
+                            <div class="row recipe-block">
+                                <div class="col-4 recipe-col">
+                                    <img class="small-image" src="{{img}}" alt="">	
                                 </div>
-                            </a>
-                        </div>
+                                <div class="col-7 info recipe-col">
+                                    <h4 class="recipe-title">{{name}}</h4>
+                                    <p>{{time}} mins &middot {{calories}} calories</p>
+                                    {{#for rating}}
+                                        <i class="fas fa-star"></i>
+                                    {{/for}}
+                                </div>
+                                <div class="col-1 recipe-col"> 
+                                    <i class="fas fa-chevron-right icon-col"></i>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 {{/each}}
             {{/if}}
