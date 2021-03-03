@@ -367,7 +367,7 @@ body {
     position: absolute !important;
     width: 40% !important;
     text-align: center;
-    bottom: 85px !important;
+    bottom: 68px !important;
     right: 0;
 }
 
@@ -376,6 +376,8 @@ body {
     font-size: 20px;
     color: white;
     background-color: #6C757D;
+    width: 100%;
+    border: none;
 }
 
 .modalLink:visited {
@@ -528,4 +530,42 @@ body {
     width: 90%;
     margin: auto;
     padding-top: 10;
+}
+
+.logout {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.bodypref {
+    padding: 0px 25px;
+}
+
+.prefbutton {
+    border-radius: 15px;
+    padding: 12px;
+    margin: 7px;
+    border: 1px solid black;
+    background-color: #EFFAF5;
+}
+
+.active-color {
+    background-color: #62D09B;
+}
+
+.preflabels {
+    font-weight: 700;
+    padding-top: 15px;
+    margin-bottom: 5px !important;
+}
+
+.prefsection {
+    background-color: #EFFAF5;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.small-top-spacer {
+    height: 75px;
 }

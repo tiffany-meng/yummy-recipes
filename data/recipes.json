@@ -1,106 +1,4 @@
 {
-    "categories" : [
-        {
-            "name" : "American",
-            "img" : "/images/american.jpg",
-            "id" : 1
-        },
-        {
-            "name" : "Barbeque",
-            "img" : "/images/barbeque.jpg",
-            "id" : 2
-        },
-        {
-            "name" : "Brazilian",
-            "img" : "/images/brazilian.jpg",
-            "id" : 3
-        },
-        {
-            "name" : "Cajun",
-            "img" : "/images/cajun.jpeg",
-            "id" : 4
-        },
-        {
-            "name" : "Chinese",
-            "img" : "/images/chinese.png",
-            "id" : 5
-        },
-        {
-            "name" : "Cuban",
-            "img" : "/images/cuban.jpg",
-            "id" : 6
-        },
-        {
-            "name" : "French",
-            "img" : "/images/french.jpeg",
-            "id" : 7
-        },
-        {
-            "name" : "German",
-            "img" : "/images/german.jpg",
-            "id" : 8
-        },
-        {
-            "name" : "Greek",
-            "img" : "/images/greek.jpg",
-            "id" : 9
-        },
-        {
-            "name" : "Indian",
-            "img" : "/images/indian.jpg",
-            "id" : 10
-        },
-        {
-            "name" : "Italian",
-            "img" : "/images/italian.jpg",
-            "id" : 11
-        },
-        {
-            "name" : "Japanese",
-            "img" : "/images/japanese.jpeg",
-            "id" : 12
-        },
-        {
-            "name" : "Korean",
-            "img" : "/images/korean.jpeg",
-            "id" : 13
-        },
-        {
-            "name" : "Lebanese",
-            "img" : "/images/lebanese.jpeg",
-            "id" : 14
-        },
-        {
-            "name" : "Mexican",
-            "img" : "/images/mexican.jpg",
-            "id" : 15
-        },
-        {
-            "name" : "Peruvian",
-            "img" : "/images/peruvian.jpg",
-            "id" : 16
-        },
-        {
-            "name" : "Soul Food",
-            "img" : "/images/soulfood.jpg",
-            "id" : 17
-        },
-        {
-            "name" : "Spanish",
-            "img" : "/images/spanish.jpg",
-            "id" : 18
-        },
-        {
-            "name" : "Thai",
-            "img" : "/images/thai.jpg",
-            "id" : 19
-        },
-        {
-            "name" : "Vietnamese",
-            "img" : "/images/vietnamese.png",
-            "id" : 20
-        }
-    ],
     "recipes": [
         {
             "name" : "Cheeseburger",
@@ -110,7 +8,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 1
+            "id" : 1, 
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Pulled Pork Sandwich",
@@ -120,7 +19,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 2
+            "id" : 2,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Baked Potato",
@@ -130,7 +30,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 3
+            "id" : 3,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Cobb Salad",
@@ -140,7 +41,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 4
+            "id" : 4,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Meatloaf",
@@ -150,7 +52,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 5
+            "id" : 5,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Chicken Kebabs",
@@ -160,7 +63,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 6
+            "id" : 6,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Brisket",
@@ -170,7 +74,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 7
+            "id" : 7,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Baby Back Ribs",
@@ -180,7 +85,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 8
+            "id" : 8,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Arrumadinho",
@@ -190,7 +96,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 9
+            "id" : 9,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Pirão",
@@ -200,7 +107,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 10
+            "id" : 10,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Barreado",
@@ -210,7 +118,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 11
+            "id" : 11,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Salpicão",
@@ -220,7 +129,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 12
+            "id" : 12,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Catfish",
@@ -230,7 +140,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 13
+            "id" : 13,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Gumbo",
@@ -240,7 +151,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 14
+            "id" : 14,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Crawfish Boil",
@@ -250,7 +162,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 15
+            "id" : 15,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Creole Rice",
@@ -260,7 +173,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 16
+            "id" : 16,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Egg Rolls",
@@ -270,7 +184,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 17
+            "id" : 17,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Stir Fry",
@@ -280,7 +195,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 18
+            "id" : 18,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Broccoli Beef",
@@ -290,7 +206,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 19
+            "id" : 19,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Bistec Empanizado",
@@ -300,7 +217,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 20
+            "id" : 20,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Arroz Con Pollo",
@@ -310,7 +228,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 21
+            "id" : 21,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Picadillo",
@@ -320,7 +239,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 22
+            "id" : 22,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Papas Rellenas",
@@ -330,7 +250,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 23
+            "id" : 23,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Ratatouille",
@@ -340,7 +261,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 24
+            "id" : 24,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Quiche",
@@ -350,7 +272,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 25
+            "id" : 25,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "French Onion Soup",
@@ -360,7 +283,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 26
+            "id" : 26,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "French Fries",
@@ -370,7 +294,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 27
+            "id" : 27,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Baguette",
@@ -380,7 +305,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 28
+            "id" : 28,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Sauerkraut Soup",
@@ -390,7 +316,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 29
+            "id" : 29,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Bratwurst",
@@ -400,7 +327,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 30
+            "id" : 30,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Schwenkbraten",
@@ -410,7 +338,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 31
+            "id" : 31,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Potato Pancakes",
@@ -420,7 +349,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 32
+            "id" : 32,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Shrimp Kebabs",
@@ -430,7 +360,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 33
+            "id" : 33,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Mediterranean Tomato Salad",
@@ -440,7 +371,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 34
+            "id" : 34,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Baklava",
@@ -450,7 +382,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 35
+            "id" : 35,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Vegan Chickpea Curry",
@@ -460,7 +393,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 36
+            "id" : 36,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Chicken Tikka Masala",
@@ -470,7 +404,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 37
+            "id" : 37,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Vegetable Biryani",
@@ -480,7 +415,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 38
+            "id" : 38,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Chicken Alfredo",
@@ -490,7 +426,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 39
+            "id" : 39,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Tuscan Chicken",
@@ -500,7 +437,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 40
+            "id" : 40,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Margherita Pizza",
@@ -510,7 +448,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 41
+            "id" : 41,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Lasagna",
@@ -520,7 +459,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 42
+            "id" : 42,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Chicken Teriyaki Bowl",
@@ -530,7 +470,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 43
+            "id" : 43,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Udon Noodles",
@@ -540,7 +481,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 44
+            "id" : 44,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Miso Salmon",
@@ -550,7 +492,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 45
+            "id" : 45,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Japanese Chicken Curry",
@@ -560,7 +503,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 46
+            "id" : 46,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Spicy Tuna Roll",
@@ -570,7 +514,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 47
+            "id" : 47,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Spicy Rice Cakes",
@@ -580,7 +525,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 48
+            "id" : 48,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Beef Bulgogi",
@@ -590,7 +536,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 49
+            "id" : 49,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Kimchi Pancakes",
@@ -600,7 +547,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 50
+            "id" : 50,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Lebanese Hushwee",
@@ -610,7 +558,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 51
+            "id" : 51,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Falafel",
@@ -620,7 +569,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 52
+            "id" : 52,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Chicken Shawarma",
@@ -630,7 +580,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 53
+            "id" : 53,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Marinated Yogurt Cheese Balls",
@@ -640,7 +591,8 @@
             "rating": 4,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 54
+            "id" : 54,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Hard Shell Tacos",
@@ -650,7 +602,8 @@
             "rating": 3,
             "calories": 450,
             "instructions": "Temp",
-            "id" : 55
+            "id" : 55,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Chicken Fajitas",
@@ -660,7 +613,8 @@
             "rating": 4,
             "calories": 350,
             "instructions": "Temp",
-            "id" : 56
+            "id" : 56,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Chile Verde Burrito",
@@ -670,7 +624,8 @@
             "rating": 4,
             "calories": 650,
             "instructions": "Temp",
-            "id" : 57
+            "id" : 57,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Carne Asada Quesadilla",
@@ -680,7 +635,8 @@
             "rating": 5,
             "calories": 300,
             "instructions": "Temp",
-            "id" : 58
+            "id" : 58,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Street Tacos",
@@ -690,7 +646,8 @@
             "rating": 3,
             "calories": 500,
             "instructions": "Temp",
-            "id" : 59
+            "id" : 59,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Enchiladas",
@@ -700,7 +657,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 60
+            "id" : 60,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Peruvian Roasted Chicken",
@@ -710,7 +668,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 61
+            "id" : 61,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Arroz Chaufa",
@@ -720,7 +679,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 62
+            "id" : 62,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Chicken Skewers",
@@ -730,7 +690,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 63
+            "id" : 63,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Yuca Fries",
@@ -740,7 +701,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 64
+            "id" : 64,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Collard Greens",
@@ -750,7 +712,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 65
+            "id" : 65,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Shrimp & Cheese Grits",
@@ -760,7 +723,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 66
+            "id" : 66,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Pork Chops",
@@ -770,7 +734,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 67
+            "id" : 67,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Croquettes",
@@ -780,7 +745,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 68
+            "id" : 68,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Paella",
@@ -790,7 +756,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 69
+            "id" : 69,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Empanadas",
@@ -800,7 +767,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 70
+            "id" : 70,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Arroz con Leche",
@@ -810,7 +778,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 71
+            "id" : 71,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Pad Thai",
@@ -820,7 +789,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 72
+            "id" : 72,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Pad See Ew",
@@ -830,7 +800,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 73
+            "id" : 73,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Thai Coconut Curry",
@@ -840,7 +811,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 74
+            "id" : 74,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Sweet Potato Soup",
@@ -850,7 +822,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 75
+            "id" : 75,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Lemongrass Chicken",
@@ -860,7 +833,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 76
+            "id" : 76,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Vietnamese Fried Rice",
@@ -870,7 +844,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 77
+            "id" : 77,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Pork Bone Soup",
@@ -880,7 +855,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 78
+            "id" : 78,
+            "tags" : ["high-cal"]
         },
         {
             "name" : "Banh Mi",
@@ -890,7 +866,8 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
-            "id" : 79
+            "id" : 79,
+            "tags" : ["high-cal"]
         }
     ]
 }

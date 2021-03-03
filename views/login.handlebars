@@ -27,13 +27,13 @@
     <body>
         {{#if failed}}
             <div class="badbanner">
-                <p class="message">Incorrect login credentials</p>
+                <p class="message">{{msg}}</p>
                 <span id="close-bad-banner" class="close">&times</span>
             </div>
         {{/if}}
         {{#if signupsuccess}}
             <div class="goodbanner">
-                <p class="message">Account created successfully!</p>
+                <p class="message">{{msg}}</p>
                 <span id="close-good-banner" class="close">&times</span>
             </div>
         {{/if}}

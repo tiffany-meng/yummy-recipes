@@ -1,0 +1,104 @@
+{
+    "categories" : [
+        {
+            "name" : "American",
+            "img" : "/images/american.jpg",
+            "id" : 1
+        },
+        {
+            "name" : "Barbeque",
+            "img" : "/images/barbeque.jpg",
+            "id" : 2
+        },
+        {
+            "name" : "Brazilian",
+            "img" : "/images/brazilian.jpg",
+            "id" : 3
+        },
+        {
+            "name" : "Cajun",
+            "img" : "/images/cajun.jpeg",
+            "id" : 4
+        },
+        {
+            "name" : "Chinese",
+            "img" : "/images/chinese.png",
+            "id" : 5
+        },
+        {
+            "name" : "Cuban",
+            "img" : "/images/cuban.jpg",
+            "id" : 6
+        },
+        {
+            "name" : "French",
+            "img" : "/images/french.jpeg",
+            "id" : 7
+        },
+        {
+            "name" : "German",
+            "img" : "/images/german.jpg",
+            "id" : 8
+        },
+        {
+            "name" : "Greek",
+            "img" : "/images/greek.jpg",
+            "id" : 9
+        },
+        {
+            "name" : "Indian",
+            "img" : "/images/indian.jpg",
+            "id" : 10
+        },
+        {
+            "name" : "Italian",
+            "img" : "/images/italian.jpg",
+            "id" : 11
+        },
+        {
+            "name" : "Japanese",
+            "img" : "/images/japanese.jpeg",
+            "id" : 12
+        },
+        {
+            "name" : "Korean",
+            "img" : "/images/korean.jpeg",
+            "id" : 13
+        },
+        {
+            "name" : "Lebanese",
+            "img" : "/images/lebanese.jpeg",
+            "id" : 14
+        },
+        {
+            "name" : "Mexican",
+            "img" : "/images/mexican.jpg",
+            "id" : 15
+        },
+        {
+            "name" : "Peruvian",
+            "img" : "/images/peruvian.jpg",
+            "id" : 16
+        },
+        {
+            "name" : "Soul Food",
+            "img" : "/images/soulfood.jpg",
+            "id" : 17
+        },
+        {
+            "name" : "Spanish",
+            "img" : "/images/spanish.jpg",
+            "id" : 18
+        },
+        {
+            "name" : "Thai",
+            "img" : "/images/thai.jpg",
+            "id" : 19
+        },
+        {
+            "name" : "Vietnamese",
+            "img" : "/images/vietnamese.png",
+            "id" : 20
+        }
+    ]
+}
