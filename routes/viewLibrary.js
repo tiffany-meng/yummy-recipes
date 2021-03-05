@@ -336,12 +336,8 @@ function filterByTags(usersprefs, data) {
             }
         })
     })
-    console.log(preferences);
-
     preferences.forEach(pref => {
         data = data.filter(item => item.tags[pref].value);
     })
-    //console.log(usersprefs)
-    //console.log(data);
     return data;
 }
