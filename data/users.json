@@ -74,6 +74,79 @@
             }
         },
         {
+            "username": "ta",
+            "password": "1234",
+            "saved_recipes": [],
+            "preferences": {
+                "diet" : {
+                    "lowcal" : {
+                        "label": "Low Cal",
+                        "value" : false
+                    },
+                    "hical" : {
+                        "label": "High Cal",
+                        "value" : false
+                    },
+                    "gf" : {
+                        "label": "Gluten Free",
+                        "value" : false
+                    },
+                    "df" : {
+                        "label": "Dairy Free",
+                        "value" : false
+                    },
+                    "vegan" : {
+                        "label": "Vegan",
+                        "value" : false
+                    },
+                    "veg" : {
+                        "label": "Vegetarian",
+                        "value" : false
+                    },
+                    "hip" : {
+                        "label": "High Protein",
+                        "value" : false
+                    },
+                    "lowcarb" : {
+                        "label": "Low Carb",
+                        "value" : false
+                    }
+                }, 
+                "price" : {
+                    "price1" : {
+                        "label": "$",
+                        "value" : false
+                    },
+                    "price2" : {
+                        "label": "$$",
+                        "value" : false
+                    },
+                    "price3" : {
+                        "label": "$$$",
+                        "value" : false
+                    },
+                    "price4" : {
+                        "label": "$$$$",
+                        "value" : false
+                    }
+                }, 
+                "time" : {
+                    "30mins" : {
+                        "label": "<30 mins",
+                        "value" : false
+                    },
+                    "1hr" : {
+                        "label": "~1 hr",
+                        "value" : false
+                    },
+                    "2hr" : {
+                        "label": "<2 hrs",
+                        "value" : false
+                    }
+                }
+            }
+        },
+        {
             "username": "tmeng",
             "password": "password2",
             "saved_recipes": [],
