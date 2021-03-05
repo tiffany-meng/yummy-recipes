@@ -180,6 +180,7 @@ exports.cuisine_list = function(req, res){
         if (req.query.search != undefined && req.query.search != '') {
             filteredData = findRecipeSearchMatches(req.query.search, filteredData);
         }
+        filteredData = filterByTags(req.user.preferences, filteredData);
         let truncatedData = filteredData.map(item => {
             let obj = Object.assign({}, item);
             obj.name = truncateLongName(item.name)
@@ -324,4 +325,23 @@ function findRecipeSearchMatches(searchString, data) {
 
 function generateAuthToken() {
     return crypto.randomBytes(30).toString('hex');
+}
+
+function filterByTags(usersprefs, data) {
+    let preferences = [];
+    Object.values(usersprefs).forEach(item => {
+        Object.entries(item).forEach(individ => {
+            if (individ[1].value == true) {
+                preferences.push(individ[0]);
+            }
+        })
+    })
+    console.log(preferences);
+
+    preferences.forEach(pref => {
+        data = data.filter(item => item.tags[pref].value);
+    })
+    //console.log(usersprefs)
+    //console.log(data);
+    return data;
 }

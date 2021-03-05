@@ -154,11 +154,11 @@
                 "diet" : {
                     "lowcal" : {
                         "label": "Low Cal",
-                        "value" : false
+                        "value" : true
                     },
                     "hical" : {
                         "label": "High Cal",
-                        "value" : false
+                        "value" : true
                     },
                     "gf" : {
                         "label": "Gluten Free",
