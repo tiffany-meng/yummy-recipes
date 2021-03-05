@@ -280,10 +280,8 @@ exports.updatesavestatus = function(req, res) {
         let userIndex = users.users.findIndex(item => {return item.username==req.user.username});
         let alreadySaved = users.users[userIndex].saved_recipes.findIndex(item => {return item==recipe});
         if(alreadySaved != -1) {
-            console.log('removing like')
             users.users[userIndex].saved_recipes.splice(alreadySaved,1);
         } else {
-            console.log('adding like')
             users.users[userIndex].saved_recipes.push(recipe);
         }
         res.redirect(`recipe/${id}`);

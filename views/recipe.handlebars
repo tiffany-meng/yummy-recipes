@@ -22,14 +22,18 @@
         </script>
     </head>
     <body>
-        <div class="backButton">
-            <button onclick="location.replace(document.referrer)" type="button" class="btn btn-lg">
-                <span class="arrow">
-                    <i class="fas fa-arrow-left"></i>
-                </span>
-            </button>
+        <div class="sticky-header">
+            <div class="backButton">
+                <button onclick="location.replace(document.referrer)" type="button" class="btn btn-lg">
+                    <span class="arrow">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                </button>
+            </div>
+            <h1 class="title title-recipe">{{recipe.name}}</h1>
         </div>
-        <h1 class="title-recipe">{{recipe.name}}</h1>
+        <div class="top-spacer">
+	    </div>
         <div class="container2">
             <img src="{{recipe.img}}" alt="" class="recipeImage">
             <div class="label2">
@@ -56,9 +60,20 @@
             </div>
         </div>
         <div class="instructions">
-            <h3>Ingredients</h3>
-            <h3>Instructions</h3>
-            {{recipe.instructions}}
+            <h3 class="header">Ingredients</h3>
+            <div class="recipesection">
+                {{#each recipe.ingredients}}
+                    <p class="instringr">{{this}}</p>
+                {{/each}}
+            </div>
+            <h3 class="header">Instructions</h3>
+            <div class="recipesection">
+                <ol class="listthing">
+                    {{#each recipe.instructions}}
+                    <li class="instringr">{{this}}</li>
+                    {{/each}}
+                </ol>
+            </div>
         </div>
         {{> navbar}}
     </body>

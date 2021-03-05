@@ -8,7 +8,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 1, 
             "tags" : {
                 "lowcal" : {
@@ -81,7 +82,8 @@
             "rating": 5,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 2,
             "tags" : {
                 "lowcal" : {
@@ -154,7 +156,8 @@
             "rating": 4,
             "calories": 200,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 3,
             "tags" : {
                 "lowcal" : {
@@ -227,7 +230,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 4,
             "tags" : {
                 "lowcal" : {
@@ -300,7 +304,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 5,
             "tags" : {
                 "lowcal" : {
@@ -373,7 +378,8 @@
             "rating": 2,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 6,
             "tags" : {
                 "lowcal" : {
@@ -446,7 +452,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 7,
             "tags" : {
                 "lowcal" : {
@@ -519,7 +526,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 8,
             "tags" : {
                 "lowcal" : {
@@ -592,7 +600,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 9,
             "tags" : {
                 "lowcal" : {
@@ -665,7 +674,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 10,
             "tags" : {
                 "lowcal" : {
@@ -738,7 +748,8 @@
             "rating": 2,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 11,
             "tags" : {
                 "lowcal" : {
@@ -811,7 +822,8 @@
             "rating": 5,
             "calories": 400,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 12,
             "tags" : {
                 "lowcal" : {
@@ -884,7 +896,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 13,
             "tags" : {
                 "lowcal" : {
@@ -957,7 +970,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 14,
             "tags" : {
                 "lowcal" : {
@@ -1030,7 +1044,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 15,
             "tags" : {
                 "lowcal" : {
@@ -1103,7 +1118,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 16,
             "tags" : {
                 "lowcal" : {
@@ -1176,7 +1192,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 17,
             "tags" : {
                 "lowcal" : {
@@ -1249,7 +1266,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 18,
             "tags" : {
                 "lowcal" : {
@@ -1322,7 +1340,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 19,
             "tags" : {
                 "lowcal" : {
@@ -1395,7 +1414,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 20,
             "tags" : {
                 "lowcal" : {
@@ -1468,7 +1488,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 21,
             "tags" : {
                 "lowcal" : {
@@ -1541,7 +1562,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 22,
             "tags" : {
                 "lowcal" : {
@@ -1614,7 +1636,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 23,
             "tags" : {
                 "lowcal" : {
@@ -1687,7 +1710,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 24,
             "tags" : {
                 "lowcal" : {
@@ -1760,7 +1784,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 25,
             "tags" : {
                 "lowcal" : {
@@ -1833,7 +1858,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 26,
             "tags" : {
                 "lowcal" : {
@@ -1906,7 +1932,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 27,
             "tags" : {
                 "lowcal" : {
@@ -1979,7 +2006,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 28,
             "tags" : {
                 "lowcal" : {
@@ -2052,7 +2080,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 29,
             "tags" : {
                 "lowcal" : {
@@ -2125,7 +2154,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 30,
             "tags" : {
                 "lowcal" : {
@@ -2198,7 +2228,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 31,
             "tags" : {
                 "lowcal" : {
@@ -2271,7 +2302,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 32,
             "tags" : {
                 "lowcal" : {
@@ -2344,7 +2376,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 33,
             "tags" : {
                 "lowcal" : {
@@ -2417,7 +2450,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 34,
             "tags" : {
                 "lowcal" : {
@@ -2490,7 +2524,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 35,
             "tags" : {
                 "lowcal" : {
@@ -2563,7 +2598,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 36,
             "tags" : {
                 "lowcal" : {
@@ -2636,7 +2672,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 37,
             "tags" : {
                 "lowcal" : {
@@ -2709,7 +2746,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 38,
             "tags" : {
                 "lowcal" : {
@@ -2782,7 +2820,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 39,
             "tags" : {
                 "lowcal" : {
@@ -2855,7 +2894,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 40,
             "tags" : {
                 "lowcal" : {
@@ -2928,7 +2968,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 41,
             "tags" : {
                 "lowcal" : {
@@ -3001,7 +3042,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 42,
             "tags" : {
                 "lowcal" : {
@@ -3074,7 +3116,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 43,
             "tags" : {
                 "lowcal" : {
@@ -3147,7 +3190,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 44,
             "tags" : {
                 "lowcal" : {
@@ -3220,7 +3264,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 45,
             "tags" : {
                 "lowcal" : {
@@ -3293,7 +3338,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 46,
             "tags" : {
                 "lowcal" : {
@@ -3366,7 +3412,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 47,
             "tags" : {
                 "lowcal" : {
@@ -3439,7 +3486,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 48,
             "tags" : {
                 "lowcal" : {
@@ -3512,7 +3560,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 49,
             "tags" : {
                 "lowcal" : {
@@ -3585,7 +3634,8 @@
             "rating": 4,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 50,
             "tags" : {
                 "lowcal" : {
@@ -3658,7 +3708,8 @@
             "rating": 4,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 51,
             "tags" : {
                 "lowcal" : {
@@ -3731,7 +3782,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 52,
             "tags" : {
                 "lowcal" : {
@@ -3804,7 +3856,8 @@
             "rating": 4,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 53,
             "tags" : {
                 "lowcal" : {
@@ -3877,7 +3930,8 @@
             "rating": 4,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 54,
             "tags" : {
                 "lowcal" : {
@@ -3950,7 +4004,8 @@
             "rating": 3,
             "calories": 450,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 55,
             "tags" : {
                 "lowcal" : {
@@ -4023,7 +4078,8 @@
             "rating": 4,
             "calories": 350,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 56,
             "tags" : {
                 "lowcal" : {
@@ -4096,7 +4152,8 @@
             "rating": 4,
             "calories": 650,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 57,
             "tags" : {
                 "lowcal" : {
@@ -4169,7 +4226,8 @@
             "rating": 5,
             "calories": 300,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 58,
             "tags" : {
                 "lowcal" : {
@@ -4242,7 +4300,8 @@
             "rating": 3,
             "calories": 500,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 59,
             "tags" : {
                 "lowcal" : {
@@ -4315,7 +4374,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 60,
             "tags" : {
                 "lowcal" : {
@@ -4388,7 +4448,8 @@
             "rating": 3,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 61,
             "tags" : {
                 "lowcal" : {
@@ -4461,7 +4522,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 62,
             "tags" : {
                 "lowcal" : {
@@ -4534,7 +4596,8 @@
             "rating": 3,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 63,
             "tags" : {
                 "lowcal" : {
@@ -4607,7 +4670,8 @@
             "rating": 3,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 64,
             "tags" : {
                 "lowcal" : {
@@ -4680,7 +4744,8 @@
             "rating": 3,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 65,
             "tags" : {
                 "lowcal" : {
@@ -4753,7 +4818,8 @@
             "rating": 3,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 66,
             "tags" : {
                 "lowcal" : {
@@ -4826,7 +4892,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 67,
             "tags" : {
                 "lowcal" : {
@@ -4898,7 +4965,8 @@
             "time": 180,
             "rating": 3,
             "calories": 340,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "price": 4,
             "id" : 68,
             "tags" : {
@@ -4972,7 +5040,8 @@
             "rating": 3,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 69,
             "tags" : {
                 "lowcal" : {
@@ -5045,7 +5114,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 70,
             "tags" : {
                 "lowcal" : {
@@ -5118,7 +5188,8 @@
             "rating": 3,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 71,
             "tags" : {
                 "lowcal" : {
@@ -5191,7 +5262,8 @@
             "rating": 3,
             "calories": 340,
             "price": 4,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 72,
             "tags" : {
                 "lowcal" : {
@@ -5264,7 +5336,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 73,
             "tags" : {
                 "lowcal" : {
@@ -5337,7 +5410,8 @@
             "rating": 3,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 74,
             "tags" : {
                 "lowcal" : {
@@ -5410,7 +5484,8 @@
             "rating": 3,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 75,
             "tags" : {
                 "lowcal" : {
@@ -5483,7 +5558,8 @@
             "rating": 3,
             "calories": 340,
             "price": 3,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 76,
             "tags" : {
                 "lowcal" : {
@@ -5556,7 +5632,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 77,
             "tags" : {
                 "lowcal" : {
@@ -5629,7 +5706,8 @@
             "rating": 3,
             "calories": 340,
             "price": 2,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 78,
             "tags" : {
                 "lowcal" : {
@@ -5702,7 +5780,8 @@
             "rating": 3,
             "calories": 340,
             "price": 1,
-            "instructions": "Temp",
+            "instructions": ["Step 1 happens first", "Step 2 comes next", "Next we do Step 3", "Whoa there are 4 steps"],
+            "ingredients" : ["Ingredient A", "Ingredient B", "Ingredient C", "Ingredient D"],
             "id" : 79,
             "tags" : {
                 "lowcal" : {

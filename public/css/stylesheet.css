@@ -150,6 +150,7 @@ body {
     font-weight: 700;
     font-size: 30px;
 }
+
 .title-recipe {
     text-align: center;
     width: 100%;
@@ -506,6 +507,12 @@ body {
     margin-right: auto;
     padding: 0 !important;
     position: relative;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.header {
+    padding-top: 10px;
 }
 
 .label2 {
@@ -601,6 +608,15 @@ body {
     padding: 8px;
 }
 
+.recipesection {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
 .small-top-spacer {
     height: 75px;
 }
@@ -609,4 +625,12 @@ body {
     width: 100%;
     margin-right: 0;
     float: right;
+}
+
+.instringr {
+    margin-bottom: 7px;
+}
+
+.listthing {
+    padding-left: 20px;
 }
