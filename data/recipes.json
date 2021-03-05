@@ -1467,16 +1467,17 @@
             "time": 50,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 21,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : false
+                    "value" : true
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -1496,11 +1497,11 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -1508,7 +1509,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -1524,7 +1525,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -1536,15 +1537,16 @@
             "name" : "Picadillo",
             "category" : 6,
             "img": "/images/picadillo.jpg",
-            "time": 50,
+            "time": 60,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 22,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -1560,11 +1562,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -1584,7 +1586,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -1596,7 +1598,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -1608,9 +1610,10 @@
             "name" : "Papas Rellenas",
             "category" : 6,
             "img": "/images/papas_rellenas.jpg",
-            "time": 50,
+            "time": 30,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 23,
             "tags" : {
@@ -1620,11 +1623,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -1632,11 +1635,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -1644,7 +1647,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -1660,11 +1663,11 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -1680,9 +1683,10 @@
             "name" : "Ratatouille",
             "category" : 7,
             "img": "/images/ratatouille.jpeg",
-            "time": 50,
+            "time": 140,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 24,
             "tags" : {
@@ -1692,11 +1696,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -1708,7 +1712,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -1716,7 +1720,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -1728,7 +1732,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -1744,7 +1748,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -1755,6 +1759,7 @@
             "time": 50,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 25,
             "tags" : {
@@ -1764,11 +1769,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -1776,11 +1781,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -1788,7 +1793,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -1800,7 +1805,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -1812,7 +1817,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -1824,15 +1829,16 @@
             "name" : "French Onion Soup",
             "category" : 7,
             "img": "/images/french_onion_soup.jpg",
-            "time": 50,
+            "time": 30,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 26,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -1840,11 +1846,11 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -1852,7 +1858,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -1868,7 +1874,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -1880,7 +1886,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -1896,9 +1902,10 @@
             "name" : "French Fries",
             "category" : 7,
             "img": "/images/french_fries.jpeg",
-            "time": 50,
+            "time": 25,
             "rating": 4,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 27,
             "tags" : {
@@ -1908,11 +1915,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -1920,11 +1927,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -1932,11 +1939,11 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -1952,7 +1959,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -1971,6 +1978,7 @@
             "time": 50,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 28,
             "tags" : {
@@ -1980,23 +1988,23 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -2012,7 +2020,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -2028,7 +2036,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2040,9 +2048,10 @@
             "name" : "Sauerkraut Soup",
             "category" : 8,
             "img": "/images/saurkraut_soup.jpeg",
-            "time": 50,
+            "time": 150,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 29,
             "tags" : {
@@ -2052,7 +2061,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -2068,7 +2077,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -2076,7 +2085,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -2084,7 +2093,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -2104,7 +2113,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -2112,15 +2121,16 @@
             "name" : "Bratwurst",
             "category" : 8,
             "img": "/images/bratwurst.jpeg",
-            "time": 50,
+            "time": 60,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 30,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -2132,7 +2142,7 @@
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -2144,7 +2154,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -2160,7 +2170,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -2172,7 +2182,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2184,9 +2194,10 @@
             "name" : "Schwenkbraten",
             "category" : 8,
             "img": "/images/schwenkbraten.jpg",
-            "time": 50,
+            "time": 150,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 31,
             "tags" : {
@@ -2196,7 +2207,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -2204,7 +2215,7 @@
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -2216,7 +2227,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -2232,7 +2243,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -2248,7 +2259,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -2259,6 +2270,7 @@
             "time": 50,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 32,
             "tags" : {
@@ -2268,7 +2280,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -2280,11 +2292,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -2292,7 +2304,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -2308,7 +2320,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -2316,7 +2328,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2328,15 +2340,16 @@
             "name" : "Shrimp Kebabs",
             "category" : 9,
             "img": "/images/shrimp_kebabs.jpg",
-            "time": 50,
+            "time": 45,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 33,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -2344,11 +2357,11 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -2364,7 +2377,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -2380,7 +2393,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -2388,7 +2401,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2400,9 +2413,10 @@
             "name" : "Mediterranean Tomato Salad",
             "category" : 9,
             "img": "/images/mediterranean_tomato_salad.jpg",
-            "time": 50,
+            "time": 30,
             "rating": 4,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 34,
             "tags" : {
@@ -2412,11 +2426,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -2424,11 +2438,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -2436,11 +2450,11 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -2456,7 +2470,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -2472,15 +2486,16 @@
             "name" : "Baklava",
             "category" : 9,
             "img": "/images/baklava.jpg",
-            "time": 50,
+            "time": 120,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 35,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -2488,7 +2503,7 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -2500,7 +2515,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -2520,7 +2535,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -2532,7 +2547,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2547,6 +2562,7 @@
             "time": 50,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 36,
             "tags" : {
@@ -2556,7 +2572,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -2568,11 +2584,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -2588,7 +2604,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -2608,7 +2624,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -2616,15 +2632,16 @@
             "name" : "Chicken Tikka Masala",
             "category" : 10,
             "img": "/images/chicken_tikka_masala.jpeg",
-            "time": 50,
+            "time": 60,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 37,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -2636,7 +2653,7 @@
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -2652,7 +2669,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -2668,7 +2685,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -2680,7 +2697,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -2688,9 +2705,10 @@
             "name" : "Vegetable Biryani",
             "category" : 10,
             "img": "/images/vegan_biryani.jpeg",
-            "time": 50,
+            "time": 45,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 38,
             "tags" : {
@@ -2700,11 +2718,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -2712,11 +2730,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -2724,7 +2742,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -2732,7 +2750,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -2748,7 +2766,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2760,15 +2778,16 @@
             "name" : "Chicken Alfredo",
             "category" : 11,
             "img": "/images/chicken_alfredo.jpeg",
-            "time": 50,
+            "time": 60,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 39,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -2792,7 +2811,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -2808,7 +2827,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -2820,7 +2839,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2832,15 +2851,16 @@
             "name" : "Tuscan Chicken",
             "category" : 11,
             "img": "/images/tuscan_chicken.jpeg",
-            "time": 50,
+            "time": 65,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 40,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -2864,7 +2884,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -2884,7 +2904,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -2892,7 +2912,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2907,12 +2927,13 @@
             "time": 50,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 41,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -2940,7 +2961,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -2948,7 +2969,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -2964,7 +2985,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -2976,15 +2997,16 @@
             "name" : "Lasagna",
             "category" : 11,
             "img": "/images/lasagna.jpeg",
-            "time": 50,
+            "time": 130,
             "rating": 4,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 42,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -2992,7 +3014,7 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -3004,7 +3026,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -3016,7 +3038,7 @@
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -3040,7 +3062,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -3048,9 +3070,10 @@
             "name" : "Chicken Teriyaki Bowl",
             "category" : 12,
             "img": "/images/chicken_teriyaki.jpeg",
-            "time": 50,
+            "time": 60,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 43,
             "tags" : {
@@ -3060,7 +3083,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -3080,11 +3103,11 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -3096,7 +3119,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -3108,7 +3131,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -3120,15 +3143,16 @@
             "name" : "Udon Noodles",
             "category" : 12,
             "img": "/images/udon_noodles.jpeg",
-            "time": 50,
+            "time": 55,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 44,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -3136,7 +3160,7 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -3144,11 +3168,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -3172,7 +3196,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -3180,7 +3204,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -3192,9 +3216,10 @@
             "name" : "Miso Salmon",
             "category" : 12,
             "img": "/images/miso_salmon.jpg",
-            "time": 50,
+            "time": 35,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 45,
             "tags" : {
@@ -3204,15 +3229,15 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -3224,11 +3249,11 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -3236,7 +3261,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -3248,7 +3273,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -3264,15 +3289,16 @@
             "name" : "Japanese Chicken Curry",
             "category" : 12,
             "img": "/images/japanese_chicken_curry.jpeg",
-            "time": 50,
+            "time": 70,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 46,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -3296,7 +3322,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -3316,7 +3342,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -3324,7 +3350,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -3336,9 +3362,10 @@
             "name" : "Spicy Tuna Roll",
             "category" : 12,
             "img": "/images/spicy_tuna_roll.jpg",
-            "time": 50,
+            "time": 65,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 47,
             "tags" : {
@@ -3348,15 +3375,15 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -3372,7 +3399,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -3384,7 +3411,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -3396,7 +3423,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -3408,15 +3435,16 @@
             "name" : "Spicy Rice Cakes",
             "category" : 13,
             "img": "/images/spicy_rice_cake.jpg",
-            "time": 50,
+            "time": 30,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 48,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -3424,19 +3452,19 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -3460,11 +3488,11 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -3480,15 +3508,16 @@
             "name" : "Beef Bulgogi",
             "category" : 13,
             "img": "/images/beef_bulgogi.jpeg",
-            "time": 50,
+            "time": 130,
             "rating": 4,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 49,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -3500,7 +3529,7 @@
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -3516,11 +3545,11 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -3544,7 +3573,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -3555,6 +3584,7 @@
             "time": 50,
             "rating": 4,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 50,
             "tags" : {
@@ -3564,11 +3594,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -3580,11 +3610,11 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -3596,7 +3626,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -3612,7 +3642,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -3624,15 +3654,16 @@
             "name" : "Lebanese Hushwee",
             "category" : 14,
             "img": "/images/lebanese_hushwee.jpg",
-            "time": 50,
+            "time": 55,
             "rating": 4,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 51,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -3640,7 +3671,7 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -3648,15 +3679,15 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -3672,7 +3703,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -3684,7 +3715,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -3696,9 +3727,10 @@
             "name" : "Falafel",
             "category" : 14,
             "img": "/images/falafel.jpeg",
-            "time": 50,
+            "time": 60,
             "rating": 4,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 52,
             "tags" : {
@@ -3708,11 +3740,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -3724,19 +3756,19 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -3756,7 +3788,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -3768,9 +3800,10 @@
             "name" : "Chicken Shawarma",
             "category" : 14,
             "img": "/images/chicken_shawarma.jpeg",
-            "time": 50,
+            "time": 140,
             "rating": 4,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 53,
             "tags" : {
@@ -3780,7 +3813,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -3788,7 +3821,7 @@
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -3796,7 +3829,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -3820,7 +3853,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -3832,7 +3865,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -3843,12 +3876,13 @@
             "time": 50,
             "rating": 4,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 54,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -3868,7 +3902,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -3876,11 +3910,11 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -3900,7 +3934,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -3911,10 +3945,11 @@
         {
             "name" : "Hard Shell Tacos",
             "category" : 15,
-            "time": 20,
+            "time": 25,
             "img": "/images/hard_shell_taco.jpg",
             "rating": 3,
             "calories": 450,
+            "price": 3,
             "instructions": "Temp",
             "id" : 55,
             "tags" : {
@@ -3924,7 +3959,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -3944,7 +3979,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -3960,7 +3995,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -3968,7 +4003,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -3984,15 +4019,16 @@
             "name" : "Chicken Fajitas",
             "category" : 15,
             "img": "/images/fajitas.jpeg",
-            "time": 30,
+            "time": 55,
             "rating": 4,
             "calories": 350,
+            "price": 2,
             "instructions": "Temp",
             "id" : 56,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4016,11 +4052,11 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -4028,7 +4064,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -4044,7 +4080,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -4059,12 +4095,13 @@
             "time": 45,
             "rating": 4,
             "calories": 650,
+            "price": 4,
             "instructions": "Temp",
             "id" : 57,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4072,11 +4109,11 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -4092,7 +4129,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -4108,7 +4145,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -4116,7 +4153,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -4131,12 +4168,13 @@
             "time": 30,
             "rating": 5,
             "calories": 300,
+            "price": 1,
             "instructions": "Temp",
             "id" : 58,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4164,11 +4202,11 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -4184,7 +4222,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -4200,15 +4238,16 @@
             "name" : "Street Tacos",
             "category" : 15,
             "img": "/images/street_tacos.jpg",
-            "time": 25,
+            "time": 55,
             "rating": 3,
             "calories": 500,
+            "price": 3,
             "instructions": "Temp",
             "id" : 59,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4232,11 +4271,11 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -4248,7 +4287,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -4260,7 +4299,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -4275,12 +4314,13 @@
             "time": 180,
             "rating": 3,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 60,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4288,7 +4328,7 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -4300,11 +4340,11 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -4316,7 +4356,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -4336,7 +4376,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -4347,6 +4387,7 @@
             "time": 180,
             "rating": 3,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 61,
             "tags" : {
@@ -4356,7 +4397,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -4364,7 +4405,7 @@
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -4376,7 +4417,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -4392,7 +4433,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -4408,7 +4449,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -4416,15 +4457,16 @@
             "name" : "Arroz Chaufa",
             "category" : 16,
             "img": "/images/arroz_chaufa.jpeg",
-            "time": 180,
+            "time": 30,
             "rating": 3,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 62,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4436,7 +4478,7 @@
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -4444,7 +4486,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -4460,7 +4502,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -4476,7 +4518,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -4488,15 +4530,16 @@
             "name" : "Chicken Skewers",
             "category" : 16,
             "img": "/images/chicken_skewers.jpg",
-            "time": 180,
+            "time": 150,
             "rating": 3,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 63,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4520,11 +4563,11 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -4540,7 +4583,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -4552,7 +4595,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -4560,9 +4603,10 @@
             "name" : "Yuca Fries",
             "category" : 16,
             "img": "/images/yuca_fries.jpg",
-            "time": 180,
+            "time": 45,
             "rating": 3,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 64,
             "tags" : {
@@ -4572,11 +4616,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -4584,11 +4628,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -4600,7 +4644,7 @@
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -4620,7 +4664,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -4632,9 +4676,10 @@
             "name" : "Collard Greens",
             "category" : 17,
             "img": "/images/collard_greens.jpeg",
-            "time": 180,
+            "time": 25,
             "rating": 3,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 65,
             "tags" : {
@@ -4644,7 +4689,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -4656,11 +4701,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -4668,11 +4713,11 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -4688,7 +4733,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -4707,12 +4752,13 @@
             "time": 180,
             "rating": 3,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 66,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4720,7 +4766,7 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -4736,7 +4782,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -4752,7 +4798,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -4768,7 +4814,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -4776,15 +4822,16 @@
             "name" : "Pork Chops",
             "category" : 17,
             "img": "/images/pork_chops.jpg",
-            "time": 180,
+            "time": 55,
             "rating": 3,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 67,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4792,7 +4839,7 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -4808,11 +4855,11 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -4820,7 +4867,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -4836,7 +4883,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -4852,6 +4899,7 @@
             "rating": 3,
             "calories": 340,
             "instructions": "Temp",
+            "price": 4,
             "id" : 68,
             "tags" : {
                 "lowcal" : {
@@ -4860,11 +4908,11 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -4876,7 +4924,7 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -4884,7 +4932,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -4900,7 +4948,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -4912,7 +4960,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -4920,15 +4968,16 @@
             "name" : "Paella",
             "category" : 18,
             "img": "/images/paella.jpg",
-            "time": 180,
+            "time": 40,
             "rating": 3,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 69,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -4956,7 +5005,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -4972,7 +5021,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -4980,7 +5029,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -4992,9 +5041,10 @@
             "name" : "Empanadas",
             "category" : 18,
             "img": "/images/empanadas.jpg",
-            "time": 180,
+            "time": 20,
             "rating": 3,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 70,
             "tags" : {
@@ -5004,15 +5054,15 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -5024,7 +5074,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -5036,7 +5086,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -5048,7 +5098,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -5064,15 +5114,16 @@
             "name" : "Arroz con Leche",
             "category" : 18,
             "img": "/images/arroz_con_leche.jpeg",
-            "time": 180,
+            "time": 50,
             "rating": 3,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 71,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -5080,7 +5131,7 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
@@ -5100,11 +5151,11 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -5124,7 +5175,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -5139,12 +5190,13 @@
             "time": 180,
             "rating": 3,
             "calories": 340,
+            "price": 4,
             "instructions": "Temp",
             "id" : 72,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -5152,11 +5204,11 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -5164,11 +5216,11 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -5188,7 +5240,7 @@
                 },
                 "price4" : {
                     "label": "$$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "30mins" : {
                     "label": "<30 mins",
@@ -5200,7 +5252,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -5208,15 +5260,16 @@
             "name" : "Pad See Ew",
             "category" : 19,
             "img": "/images/pad_see_ew.jpeg",
-            "time": 180,
+            "time": 30,
             "rating": 3,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 73,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -5224,11 +5277,11 @@
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -5244,7 +5297,7 @@
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -5252,7 +5305,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -5264,7 +5317,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -5280,15 +5333,16 @@
             "name" : "Thai Coconut Curry",
             "category" : 19,
             "img": "/images/thai_coconut_curry.jpeg",
-            "time": 180,
+            "time": 50,
             "rating": 3,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 74,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -5308,11 +5362,11 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -5320,7 +5374,7 @@
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -5340,7 +5394,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -5352,9 +5406,10 @@
             "name" : "Sweet Potato Soup",
             "category" : 19,
             "img": "/images/sweet_potato_soup.jpeg",
-            "time": 180,
+            "time": 20,
             "rating": 3,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 75,
             "tags" : {
@@ -5364,7 +5419,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -5376,11 +5431,11 @@
                 },
                 "vegan" : {
                     "label": "Vegan",
-                    "value" : false
+                    "value" : true
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
@@ -5392,7 +5447,7 @@
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -5408,7 +5463,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
@@ -5427,6 +5482,7 @@
             "time": 180,
             "rating": 3,
             "calories": 340,
+            "price": 3,
             "instructions": "Temp",
             "id" : 76,
             "tags" : {
@@ -5436,15 +5492,15 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
-                    "value" : true
+                    "value" : false
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -5456,7 +5512,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -5472,7 +5528,7 @@
                 },
                 "price3" : {
                     "label": "$$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price4" : {
                     "label": "$$$$",
@@ -5488,7 +5544,7 @@
                 },
                 "2hr" : {
                     "label": "<2 hrs",
-                    "value" : false
+                    "value" : true
                 }
             }
         },
@@ -5496,15 +5552,16 @@
             "name" : "Vietnamese Fried Rice",
             "category" : 20,
             "img": "/images/viet_fried_rice.jpeg",
-            "time": 180,
+            "time": 55,
             "rating": 3,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 77,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -5524,11 +5581,11 @@
                 },
                 "veg" : {
                     "label": "Vegetarian",
-                    "value" : false
+                    "value" : true
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -5540,7 +5597,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -5556,7 +5613,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -5568,15 +5625,16 @@
             "name" : "Pork Bone Soup",
             "category" : 20,
             "img": "/images/pork_bone_soup.jpg",
-            "time": 180,
+            "time": 60,
             "rating": 3,
             "calories": 340,
+            "price": 2,
             "instructions": "Temp",
             "id" : 78,
             "tags" : {
                 "lowcal" : {
                     "label": "Low Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "hical" : {
                     "label": "High Cal",
@@ -5600,11 +5658,11 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
-                    "value" : false
+                    "value" : true
                 },
                 "price1" : {
                     "label": "$",
@@ -5612,7 +5670,7 @@
                 },
                 "price2" : {
                     "label": "$$",
-                    "value" : false
+                    "value" : true
                 },
                 "price3" : {
                     "label": "$$$",
@@ -5628,7 +5686,7 @@
                 },
                 "1hr" : {
                     "label": "~1 hr",
-                    "value" : false
+                    "value" : true
                 },
                 "2hr" : {
                     "label": "<2 hrs",
@@ -5640,9 +5698,10 @@
             "name" : "Banh Mi",
             "category" : 20,
             "img": "/images/banh_mi.jpg",
-            "time": 180,
+            "time": 30,
             "rating": 3,
             "calories": 340,
+            "price": 1,
             "instructions": "Temp",
             "id" : 79,
             "tags" : {
@@ -5652,7 +5711,7 @@
                 },
                 "hical" : {
                     "label": "High Cal",
-                    "value" : true
+                    "value" : false
                 },
                 "gf" : {
                     "label": "Gluten Free",
@@ -5660,7 +5719,7 @@
                 },
                 "df" : {
                     "label": "Dairy Free",
-                    "value" : false
+                    "value" : true
                 },
                 "vegan" : {
                     "label": "Vegan",
@@ -5672,7 +5731,7 @@
                 },
                 "hip" : {
                     "label": "High Protein",
-                    "value" : false
+                    "value" : true
                 },
                 "lowcarb" : {
                     "label": "Low Carb",
@@ -5680,7 +5739,7 @@
                 },
                 "price1" : {
                     "label": "$",
-                    "value" : false
+                    "value" : true
                 },
                 "price2" : {
                     "label": "$$",
@@ -5696,7 +5755,7 @@
                 },
                 "30mins" : {
                     "label": "<30 mins",
-                    "value" : false
+                    "value" : true
                 },
                 "1hr" : {
                     "label": "~1 hr",
