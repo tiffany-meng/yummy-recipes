@@ -33,27 +33,40 @@
         </div>
         <div class="top-spacer">
 	    </div>
-        {{#each data}}
-            <div class="recipe">
-                <a class="bigbutton" href="/recipe/{{id}}">
-                    <div class="row recipe-block">
-                        <div class="col-4 recipe-col">
-                            <img class="small-image" src="{{img}}" alt="">	
-                        </div>
-                        <div class="col-7 info recipe-col">
-                            <h4 class="recipe-title">{{name}}</h4>
-                            <p>{{time}} mins &middot {{calories}} calories</p>
-                            {{#for rating}}
-                                <i class="fas fa-star"></i>
-                            {{/for}}
-                        </div>
-                        <div class="col-1 recipe-col"> 
-                            <i class="fas fa-chevron-right icon-col"></i>
-                        </div>
-                    </div>
-                </a>
+        {{#if empty}}
+            <div class="emptySave">
+                <i class="emptyIcon fas fa-utensils"></i>
+                <h3>oops!</h3>
+                <p>We have no recipes that match your preferences. Please visit the preferences page if you wish to change this!</p>
+                <button onclick="window.location.href='/preferences'" type="button" class="btn btn-outline-secondary emptyButton">Preferences</button>
             </div>
-        {{/each}}
+        {{else}}
+            {{#each data}}
+                <div class="recipe">
+                    <a class="bigbutton" href="/recipe/{{id}}">
+                        <div class="row recipe-block">
+                            <div class="col-4 recipe-col">
+                                <img class="small-image" src="{{img}}" alt="">	
+                            </div>
+                            <div class="col-7 info recipe-col">
+                                <h4 class="recipe-title">{{name}}</h4>
+                                <p>{{time}} mins &middot {{calories}} cals</p>
+                                {{#for price}}
+                                $
+                                {{/for}}
+                                &middot
+                                {{#for rating}}
+                                    <i class="fas fa-star"></i>
+                                {{/for}}
+                            </div>
+                            <div class="col-1 recipe-col"> 
+                                <i class="fas fa-chevron-right icon-col"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {{/each}}
+        {{/if}}
         {{> navbar}}
     </body>
 </html>

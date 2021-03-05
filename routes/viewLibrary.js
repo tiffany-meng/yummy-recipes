@@ -187,12 +187,13 @@ exports.cuisine_list = function(req, res){
             return obj;
         });
         let category = getCategoryByID(id);
-
+        let empty = truncatedData.length == 0; 
         res.render('list', {
             id: id,
             page: "home",
             data: truncatedData,
             category: category.name,
+            empty: empty
         });
     } else {
         res.locals.badAuth = true;
@@ -205,7 +206,11 @@ exports.saved_recipes = function(req, res){
         let userIndex = users.users.findIndex(item => {return item.username==req.user.username});
         let savedRecipes = users.users[userIndex].saved_recipes;
         let empty = savedRecipes.length == 0; 
-        res.render('library', {page: "library", recipes: savedRecipes, empty: empty});
+        res.render('library', {
+            page: "library", 
+            recipes: savedRecipes, 
+            empty: empty
+        });
     } else {
         res.redirect('/');
     }
@@ -300,8 +305,8 @@ function getRecipeByID(id) {
 }
 
 function truncateLongName(name) {
-    if (name.length > 14) {
-        return name.substring(0,14).trim() + "...";
+    if (name.length > 12) {
+        return name.substring(0,12).trim() + "...";
     } else {
         return name;
     }

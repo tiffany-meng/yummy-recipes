@@ -27,7 +27,11 @@
                                 </div>
                                 <div class="col-7 info recipe-col">
                                     <h4 class="recipe-title">{{name}}</h4>
-                                    <p>{{time}} mins &middot {{calories}} calories</p>
+                                    <p>{{time}} mins &middot {{calories}} cals</p>
+                                    {{#for price}}
+                                    $
+                                    {{/for}}
+                                    &middot
                                     {{#for rating}}
                                         <i class="fas fa-star"></i>
                                     {{/for}}

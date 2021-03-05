@@ -29,25 +29,26 @@
                 </span>
             </button>
         </div>
-        <h1 class="title">{{recipe.name}}</h1>
+        <h1 class="title-recipe">{{recipe.name}}</h1>
         <div class="container2">
             <img src="{{recipe.img}}" alt="" class="recipeImage">
             <div class="label2">
                 <div class="row">
-                    <div class="col-8">
-                         <h4>{{recipe.name}}</h4> 
-                         <p>{{recipe.time}} mins &middot {{recipe.calories}} calories</p>
-                    </div>
-                    <div class="col-4">
+                    <div class="col-12">
                         {{#for recipe.rating}}
                             <i class="fas fa-star"></i>
                         {{/for}}
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>{{recipe.time}} mins &middot {{recipe.calories}} calories &middot {{#for recipe.price}}${{/for}}</p>
+                    </div>
+                </div>
             </div>
             <div class="saveButton">
                 <button class="btn btn-custom heartButton" name={{recipe.id}} id="like">
-                    <span class="fa-stack fa-2x" style="vertical-align: top;">
+                    <span class="fa-stack fa-2x">
                         <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
                         <i id="heart" class="fas fa-heart fa-stack-1x heart {{#if saved}}saved{{/if}}"></i>
                     </span>
