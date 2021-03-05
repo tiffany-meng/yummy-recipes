@@ -7,14 +7,23 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">     
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+        <script>
+            $(document).ready(function() {
+                $('#like').click(function(event) {
+                    $.post(`/updatesavestatus/${this.name}`, {referrer: document.referrer}, () => {
+                        $('#heart').toggleClass('saved');
+                    })
+                })
+            });
+        </script>
     </head>
     <body>
         <div class="backButton">
-            <button onclick="window.location.href='{{backPath}}'" type="button" class="btn btn-lg">
+            <button onclick="location.replace(document.referrer)" type="button" class="btn btn-lg">
                 <span class="arrow">
                     <i class="fas fa-arrow-left"></i>
                 </span>
@@ -31,21 +40,18 @@
                     </div>
                     <div class="col-4">
                         {{#for recipe.rating}}
-                                <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         {{/for}}
                     </div>
                 </div>
             </div>
             <div class="saveButton">
-                <form role="form" method="POST" class="saveForm" action="/recipe/{{recipe.id}}">
-                    <input type="hidden" name="backPath" id="backPath" value="{{backPath}}">
-                    <button type="submit" class="btn btn-custom heartButton" name="like">
-                        <span class="fa-stack fa-2x" style="vertical-align: top;">
+                <button class="btn btn-custom heartButton" name={{recipe.id}} id="like">
+                    <span class="fa-stack fa-2x" style="vertical-align: top;">
                         <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
-                        <i class="fas fa-heart fa-stack-1x {{#if saved}}savedHeart{{/if}} {{#unless saved}}unsavedHeart{{/unless}}"></i>
-                        </span>
-                    </button>
-                </form>
+                        <i id="heart" class="fas fa-heart fa-stack-1x heart {{#if saved}}saved{{/if}}"></i>
+                    </span>
+                </button>
             </div>
         </div>
         <div class="instructions">

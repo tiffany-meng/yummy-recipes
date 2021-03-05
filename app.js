@@ -73,17 +73,16 @@ app.use((req, res, next) => {
 });
 
 app.get('/', viewLibrary.login);
-app.post('/', viewLibrary.loginAttempt);
-app.post('/signup', viewLibrary.signup);
 app.get('/home', viewLibrary.home);
 app.get('/cuisine/:id', viewLibrary.cuisine_list);
 app.get('/library', viewLibrary.saved_recipes);
 app.get('/preferences', viewLibrary.preferences);
 app.get('/recipe/:id', viewLibrary.recipe);
-app.post('/recipe/:id', viewLibrary.saveRecipe);
-app.get('/savedrecipe/:id', viewLibrary.recipe);
+app.post('/', viewLibrary.loginAttempt);
+app.post('/signup', viewLibrary.signup);
 app.post('/logout', viewLibrary.logout);
-app.get('/togglePref/:pref', viewLibrary.togglePref);
+app.post('/updatepreferences/:pref', viewLibrary.updatepreferences);
+app.post('/updatesavestatus/:id', viewLibrary.updatesavestatus);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

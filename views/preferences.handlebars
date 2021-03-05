@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="/css/stylesheet.css">
 	    <link rel="icon" href="/images/food-logo.png">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
@@ -12,51 +12,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <script>
+            let dietprefs = ["lowcal", "hical", "gf", "df", "vegan", "veg", "hip", "lowcarb"];
+            let priceprefs = ["price1", "price2", "price3", "price4"];
+            let timeprefs = ["30mins", "1hr", "2hr"];
             $(document).ready(function() {
-                $("#lowcal").click(function(event) {
-                    window.location.href="/togglePref/lowcal";
+                dietprefs.forEach(preference => {
+                    $(`#${preference}`).click(function(event) {
+                        $.post(`/updatepreferences/diet-${preference}`, () => {
+                            $(this).toggleClass('active-color');
+                        })
+                    })
                 })
-                $("#hical").click(function(event) {
-                    window.location.href="/togglePref/hical";
+                priceprefs.forEach(preference => {
+                    $(`#${preference}`).click(function(event) {
+                        $.post(`/updatepreferences/price-${preference}`, () => {
+                            $(this).toggleClass('active-color');
+                        })
+                    })
                 })
-                $("#gf").click(function(event) {
-                    window.location.href="/togglePref/gf";
-                })
-                $("#df").click(function(event) {
-                    window.location.href="/togglePref/df";
-                })
-                $("#vegan").click(function(event) {
-                    window.location.href="/togglePref/vegan";
-                })
-                $("#veg").click(function(event) {
-                    window.location.href="/togglePref/veg";
-                })
-                $("#hip").click(function(event) {
-                    window.location.href="/togglePref/hip";
-                })
-                $("#lowcarb").click(function(event) {
-                    window.location.href="/togglePref/lowcarb";
-                })
-                $("#price1").click(function(event) {
-                    window.location.href="/togglePref/price1";
-                })
-                $("#price2").click(function(event) {
-                    window.location.href="/togglePref/price2";
-                })
-                $("#price3").click(function(event) {
-                    window.location.href="/togglePref/price3";
-                })
-                $("#price4").click(function(event) {
-                    window.location.href="/togglePref/price4";
-                })
-                $("#30mins").click(function(event) {
-                    window.location.href="/togglePref/30mins";
-                })
-                $("#1hr").click(function(event) {
-                    window.location.href="/togglePref/1hr";
-                })
-                $("#2hr").click(function(event) {
-                    window.location.href="/togglePref/2hr";
+                timeprefs.forEach(preference => {
+                    $(`#${preference}`).click(function(event) {
+                        $.post(`/updatepreferences/time-${preference}`, () => {
+                            $(this).toggleClass('active-color');
+                        })
+                    })
                 })
             })
         </script>
@@ -71,27 +50,21 @@
         <div class="bodypref">
             <h5 class="preflabels">Dietary Restrictions</h5>
             <div class="prefsection">
-                <button class="prefbutton {{#if lowcal}}active-color{{/if}}" id="lowcal">Low Calorie</button>
-                <button class="prefbutton {{#if hical}}active-color{{/if}}" id="hical">High Calorie</button>
-                <button class="prefbutton {{#if gf}}active-color{{/if}}" id="gf">Gluten Free</button>
-                <button class="prefbutton {{#if df}}active-color{{/if}}" id="df">Dairy Free</button>
-                <button class="prefbutton {{#if vegan}}active-color{{/if}}" id="vegan">Vegan</button>
-                <button class="prefbutton {{#if veg}}active-color{{/if}}" id="veg">Vegetarian</button>
-                <button class="prefbutton {{#if hip}}active-color{{/if}}" id="hip">High Protein</button>
-                <button class="prefbutton {{#if lowcarb}}active-color{{/if}}" id="lowcarb">Low Carb</button>
+                {{#each preferences.diet}}
+                    <button class="prefbutton{{#if value}} active-color{{/if}}" id={{@key}}>{{label}}</button>
+                {{/each}}
             </div>
             <h5 class="preflabels">Price Constraints</h5>
             <div class="prefsection">
-                <button class="prefbutton {{#if price1}}active-color{{/if}}" id="price1">$</button>
-                <button class="prefbutton {{#if price2}}active-color{{/if}}" id="price2">$$</button>
-                <button class="prefbutton {{#if price3}}active-color{{/if}}" id="price3">$$$</button>
-                <button class="prefbutton {{#if price4}}active-color{{/if}}" id="price4">$$$$</button>
+                {{#each preferences.price}}
+                    <button class="prefbutton{{#if value}} active-color{{/if}}" id={{@key}}>{{label}}</button>
+                {{/each}}
             </div>
             <h5 class="preflabels">Time Constraints</h5>
             <div class="prefsection">
-                <button class="prefbutton {{#if x30mins}}active-color{{/if}}" id="30mins">&lt 30 mins</button>
-                <button class="prefbutton {{#if x1hr}}active-color{{/if}}" id="1hr">~1 hour</button>
-                <button class="prefbutton {{#if x2hr}}active-color{{/if}}" id="2hr">&lt 2 hours</button>
+                {{#each preferences.time}}
+                    <button class="prefbutton{{#if value}} active-color{{/if}}" id={{@key}}>{{label}}</button>
+                {{/each}}
             </div>
         </div>
         {{> navbar}}

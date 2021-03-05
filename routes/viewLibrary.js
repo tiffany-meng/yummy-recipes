@@ -12,10 +12,10 @@ exports.login = function(req, res){
             msg: "Sign in required",
             signupsuccess: false
         });
-    } else if (req.query.account == "created") {
+    } else if (req.query.newuser != undefined) {
         res.render('login', {
             failed: false,
-            msg: "Account created successfully!",
+            msg: `Account created for ${req.query.newuser}!`,
             signupsuccess: true
         });
     } else {
@@ -79,7 +79,7 @@ exports.signup = function(req, res) {
                 errorMsg: "Fill all fields to create an account!"
             })
         } else {
-            let userResult = users.users.find(({u})=>{return u.trim() == username.trim()});
+            let userResult = users.users.find((u)=>{return u.username.trim() == username.trim()});
             if (password != password2) {
                 res.render('signup', {
                     failed: true,
@@ -95,9 +95,76 @@ exports.signup = function(req, res) {
                     "username" : username,
                     "password" : password,
                     "saved_recipes" : [],
-                    "preferences" : []
+                    "preferences" : {
+                        "diet" : {
+                            "lowcal" : {
+                                "label": "Low Cal",
+                                "value" : false
+                            },
+                            "hical" : {
+                                "label": "High Cal",
+                                "value" : false
+                            },
+                            "gf" : {
+                                "label": "Gluten Free",
+                                "value" : false
+                            },
+                            "df" : {
+                                "label": "Dairy Free",
+                                "value" : false
+                            },
+                            "vegan" : {
+                                "label": "Vegan",
+                                "value" : false
+                            },
+                            "veg" : {
+                                "label": "Vegetarian",
+                                "value" : false
+                            },
+                            "hip" : {
+                                "label": "High Protein",
+                                "value" : false
+                            },
+                            "lowcarb" : {
+                                "label": "Low Carb",
+                                "value" : false
+                            }
+                        }, 
+                        "price" : {
+                            "price1" : {
+                                "label": "$",
+                                "value" : false
+                            },
+                            "price2" : {
+                                "label": "$$",
+                                "value" : false
+                            },
+                            "price3" : {
+                                "label": "$$$",
+                                "value" : false
+                            },
+                            "price4" : {
+                                "label": "$$$$",
+                                "value" : false
+                            }
+                        }, 
+                        "time" : {
+                            "30mins" : {
+                                "label": "<30 mins",
+                                "value" : false
+                            },
+                            "1hr" : {
+                                "label": "~1 hr",
+                                "value" : false
+                            },
+                            "2hr" : {
+                                "label": "<2 hrs",
+                                "value" : false
+                            }
+                        }
+                    }
                 })
-                res.redirect('/?account=created');
+                res.redirect(`/?newuser=${username.trim()}`);
             }
         }
     }
@@ -147,40 +214,9 @@ exports.saved_recipes = function(req, res){
 exports.preferences = function(req, res){
     if (req.user) {
         let userIndex = users.users.findIndex(item => {return item.username==req.user.username})
-        let prefArray = users.users[userIndex].preferences;
-        let lowcal = findPreference('lowcal', prefArray);
-        let hical = findPreference('hical', prefArray);
-        let gf = findPreference('gf', prefArray);
-        let df = findPreference('df', prefArray);
-        let vegan = findPreference('vegan', prefArray);
-        let veg = findPreference('veg', prefArray);
-        let hip = findPreference('hip', prefArray);
-        let lowcarb = findPreference('lowcarb', prefArray);
-        let price1 = findPreference('price1', prefArray);
-        let price2 = findPreference('price2', prefArray);
-        let price3 = findPreference('price3', prefArray);
-        let price4 = findPreference('price4', prefArray);
-        let x30mins = findPreference('30mins', prefArray);
-        let x1hr = findPreference('1hr', prefArray);
-        let x2hr = findPreference('2hr', prefArray);
-
         res.render('preferences', {
             page: "preferences",
-            lowcal: lowcal,
-            hical: hical,
-            gf: gf,
-            df: df,
-            vegan: vegan,
-            veg: veg,
-            hip: hip,
-            lowcarb: lowcarb,
-            price1: price1,
-            price2: price2,
-            price3: price3,
-            price4: price4,
-            x30mins: x30mins,
-            x1hr: x1hr,
-            x2hr: x2hr
+            preferences: users.users[userIndex].preferences
         });
     } else {
         res.redirect('/');
@@ -189,63 +225,26 @@ exports.preferences = function(req, res){
 
 exports.recipe = function(req, res){
     if (req.user) {
-        let path = req.path.split("/")[1];
-        let backPath;
+        let path = req.headers.referer.split("/")[3];
         let id = req.params.id;
         let recipe = getRecipeByID(id);
-    
-        if(path == "recipe") {
-            backPath = `/cuisine/${recipe.category}`;
+        if(path == "cuisine") {
+            page = "home";
         } else {
-            backPath = "/library";
+            page = "library";
         }
-
         let userIndex = users.users.findIndex(item => {return item.username==req.user.username});
         let saved = users.users[userIndex].saved_recipes.findIndex(item => {return item==recipe});
-    
         res.render('recipe', {
-            page: "home", 
+            page: page, 
             id: id, 
             recipe: recipe, 
-            saved: saved!=-1, 
-            backPath: backPath
+            saved: saved!=-1
         });
     } else {
         res.redirect('/');
     }
 };
-
-exports.saveRecipe = function(req, res) {
-    if (req.user) {
-        let backPath = req.body.backPath;
-        let id = req.params.id;
-        let recipe = getRecipeByID(id);
-        let userIndex = users.users.findIndex(item => {return item.username==req.user.username});
-        let alreadySaved = users.users[userIndex].saved_recipes.findIndex(item => {return item==recipe});
-        if(alreadySaved != -1) {
-            users.users[userIndex].saved_recipes.splice(alreadySaved,1);
-        } else {
-            users.users[userIndex].saved_recipes.push(recipe);
-        }
-    
-        let path = backPath.split("/")[1];
-        let fromSave;
-    
-        if(path == "cuisine") {
-            fromSave = false;
-        } else {
-            fromSave = true;
-        }
-    
-        if(fromSave) {
-            res.redirect(`/savedrecipe/${id}`);
-        } else {
-            res.redirect(`/recipe/${id}`);
-        }
-    } else {
-        res.redirect('/');
-    }
-}
 
 exports.logout = function(req, res) {
     let authTokens = req.app.locals.authTokens;
@@ -255,32 +254,36 @@ exports.logout = function(req, res) {
     res.redirect('/');
 }
 
-exports.togglePref = function(req, res) {
+exports.updatepreferences = function(req, res) {
     if (req.user) {
         let userIndex = users.users.findIndex(item => {return item.username==req.user.username})
-        let toggledPref = req.params.pref;
-        users.users[userIndex].preferences = togglePreference(toggledPref, users.users[userIndex].preferences);
+        let path = req.params.pref.split('-');
+        let category = path[0];
+        let preference = path[1];
+        users.users[userIndex].preferences[category][preference].value =  !users.users[userIndex].preferences[category][preference].value;
         res.redirect('/preferences');
     } else {
         res.redirect('/');
     }
 }
 
-// Helper functions to filter data
-function findPreference(preference, prefArray) {
-    let result = prefArray.findIndex(item => {return item==preference});
-    return result != -1;
-}
-function togglePreference(toggledPref, prefArray) {
-    let result = prefArray.findIndex(item => {return item==toggledPref});
-    if (result != -1) {
-        prefArray.splice(result, 1);
-        console.log("removing from preferences")
+exports.updatesavestatus = function(req, res) {
+    if (req.user) {
+        let id = req.params.id;
+        let recipe = getRecipeByID(id);
+        let userIndex = users.users.findIndex(item => {return item.username==req.user.username});
+        let alreadySaved = users.users[userIndex].saved_recipes.findIndex(item => {return item==recipe});
+        if(alreadySaved != -1) {
+            console.log('removing like')
+            users.users[userIndex].saved_recipes.splice(alreadySaved,1);
+        } else {
+            console.log('adding like')
+            users.users[userIndex].saved_recipes.push(recipe);
+        }
+        res.redirect(`recipe/${id}`);
     } else {
-        prefArray.push(toggledPref);
-        console.log("adding to preferences");
+        res.redirect('/');
     }
-    return prefArray;
 }
 
 function filterDataByCategory(id) {
